@@ -52,7 +52,13 @@ Pages for a **private** repo needs a paid GitHub plan (Pro/Team); on the free pl
 ## Pricing
 Two independent sources per card:
 - **Card Ladder** (the green value) — the primary market estimate, with a confidence flag (**high** = exact-parallel comp, **medium/low** = estimated). See each card's notes.
-- **130pt** — the median of matched sold listings from [130point](https://130point.com) (eBay + auction houses), pulled via its search API. A **~** means the parallel match was loose or thin (e.g. a graded card's median got mixed with raw copies, or an auto with base) — treat those as rough. The detail page shows the sold-count and low–high range so you can judge. Where the two sources agree, confidence is high; where they diverge, it's a card worth a manual look (e.g. #34 Russo Orange /25).
+- **130pt** — the median of matched sold listings from [130point](https://130point.com) (eBay + auction houses), pulled via its search API, tiered by how close the match is:
+  - **exact** (no marker) — same parallel + print run + year. 59 cards.
+  - **≈ close** — nearest run/year of the *same* parallel when the exact one has no sales (e.g. `/50` when the card is `/75`, or last year's copy). The note on the card says exactly what it fell back to. 9 cards.
+  - **~ broad** — no parallel match at all, so it's the player's overall median across all their cards. Directional only. 47 cards.
+  - **no match** — nothing found (6 cards, mostly thin graded autos).
+
+  The detail page shows the sold-count, low–high range, and the fallback note so you can judge each one. Where the two sources agree, confidence is high; where they diverge sharply it's worth a manual look — e.g. #34 Russo Orange /25 (CL $55 vs 130pt $189), #91 Putellas (CL $55 vs $209), #95 Bonmatí (CL $200 vs $98).
 
 ## To verify
 - Miedema 2021-22 #10 print run (read as /75; only /25 comps exist).

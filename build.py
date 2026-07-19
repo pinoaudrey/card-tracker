@@ -246,8 +246,9 @@ INDEX = f"""<!doctype html><html lang="en"><head>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none">No cards in this view.</div>
 </main>
-<footer>Green value = Card Ladder market est. &middot; <b>130pt</b> = median of matched 130point sold listings (&ldquo;~&rdquo; = loose/thin match, treat as rough) &middot;
-  click any card for both values, the sold-count and range &middot; Paid/Sold entries saved in this browser (Export to back up).</footer>
+<footer>Green value = Card Ladder market est. &middot; <b>130pt</b> = median of matched 130point sold listings.
+  No marker = exact parallel + print-run + year match &middot; <b>&#8776;</b> = close match (nearest run/year of the same parallel; see the note) &middot; <b>~</b> = broad player median (no parallel match found). &middot;
+  Click any card for both values, the sold-count, range and match note &middot; Paid/Sold entries saved in this browser (Export to back up).</footer>
 <script>
 const CARDS={CARDS_JSON};
 const HIST={HIST_TOTALS};
@@ -276,7 +277,7 @@ function cardHTML(c){{
     <div class="body">
       <div class="top"><div><p class="player"><a href="cards/${{c.n}}.html">${{c.player}}</a></p>
         <div class="team">${{c.team||''}}</div></div>
-        <div class="val"><div class="big">${{money(c.market_value)}}</div>${{c.point130?`<div class="p130 ${{c.point130.rough?'rough':''}}">130pt&nbsp;<b>${{money(c.point130.v)}}</b>${{c.point130.rough?'&nbsp;~':''}}</div>`:''}}</div></div>
+        <div class="val"><div class="big">${{money(c.market_value)}}</div>${{c.point130?`<div class="p130 ${{c.point130.tier!=='exact'?'rough':''}}" title="130point: ${{c.point130.note||'exact parallel match'}}">130pt&nbsp;<b>${{money(c.point130.v)}}</b>${{c.point130.tier==='close'?'&nbsp;≈':c.point130.tier==='broad'?'&nbsp;~':''}}</div>`:''}}</div></div>
       <div class="setline">${{c.year||''}} ${{c.set||''}} ${{c.card_no?'&middot; #'+c.card_no:''}}<br>${{c.parallel||''}}</div>
       <div class="chips">${{chips}}</div>
       <details class="track"${{isSold?' open':''}}><summary><span class="track-sum">${{trackSummary(c,s)}}</span></summary>
@@ -352,8 +353,15 @@ for c in cards:
     front_img = f'<figure><img src="../images/{esc(c["front"])}.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure>' if c.get("front") else ""
     _p = c.get("point130")
     if _p:
-        _rough = ' <span style="color:var(--warn)">(rough match)</span>' if _p["rough"] else ''
-        p130row = f'<span class="k">130point</span><span>{money(_p["v"])} &middot; {_p["k"]} sold &middot; {money(_p["lo"])}&ndash;{money(_p["hi"])}{_rough}</span>'
+        _tier = _p.get("tier", "exact")
+        _note = esc(_p.get("note", ""))
+        if _tier == "exact":
+            _tag = ' <span style="color:var(--muted)">(exact parallel)</span>'
+        elif _tier == "close":
+            _tag = f' <span style="color:var(--warn)">&#8776; {_note}</span>'
+        else:
+            _tag = f' <span style="color:var(--muted)">&#126; {_note}</span>'
+        p130row = f'<span class="k">130point</span><span>{money(_p["v"])} &middot; {_p["k"]} sold &middot; {money(_p["lo"])}&ndash;{money(_p["hi"])}{_tag}</span>'
     else:
         p130row = '<span class="k">130point</span><span>&mdash; no match</span>'
     DETAIL = f"""<!doctype html><html lang="en"><head>
