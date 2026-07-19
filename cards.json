@@ -420,9 +420,9 @@
     "back": "IMG_8379",
     "player": "Vivianne Miedema",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL — Chrome Autograph",
+    "set": "Topps Chrome Sapphire UWCL — Autographs",
     "card_no": "",
-    "parallel": "Orange Cracked Ice",
+    "parallel": "Orange",
     "serial": "06/25",
     "auto": true,
     "relic": false,
@@ -436,15 +436,15 @@
       "Orange Wave Auto /25 — $55.00 (Jan 11, 2026)",
       "Sapphire Orange Auto /25 — $30–34 (Apr–May 2026)"
     ],
-    "notes": "On-card auto, orange cracked ice /25. [Value reconciled to Notion comp avg (was $42; 3 Card Ladder comps $30.0–$33.79).]",
+    "notes": "On-card auto, orange cracked ice /25. [Value reconciled to Notion comp avg (was $42; 3 Card Ladder comps $30.0–$33.79).] [Corrected set to Topps Chrome Sapphire (back confirms); Orange auto /25 comps $30-33.79.]",
     "confidence": "medium",
     "point130": {
-      "v": 5,
-      "lo": 1,
-      "hi": 30,
-      "k": 19,
-      "tier": "broad",
-      "note": "no parallel match — broad Miedema median"
+      "v": 30,
+      "lo": 30,
+      "hi": 33.79,
+      "k": 3,
+      "tier": "close",
+      "note": "Sapphire Orange auto /25"
     }
   },
   {
@@ -453,15 +453,15 @@
     "back": "IMG_8381",
     "player": "Melchie Dumornay",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL — Future Stars Autograph",
+    "set": "Topps Chrome Sapphire UWCL — Future Stars Autographs",
     "card_no": "AV-CV",
-    "parallel": "Orange Cracked Ice",
+    "parallel": "Orange",
     "serial": "24/25",
     "auto": true,
     "relic": false,
     "grade": "Raw",
     "team": "OL Lyonnes",
-    "market_value": 25,
+    "market_value": 15,
     "last_sale": 24.99,
     "last_sale_date": "2026-05-12",
     "comps": [
@@ -469,16 +469,17 @@
       "Black /10 — $60–65 (Jun–Jul 2026)",
       "Green /99 — $6–13 (2026)"
     ],
-    "notes": "On-card auto, orange cracked ice /25.",
+    "notes": "On-card auto, orange cracked ice /25. [Corrected set to Topps Chrome Sapphire (back confirms); value cut from $25: Notion's $36.88 was her 2023-24 Corventina RC, a different card. Orange /25 auto is thin.]",
     "confidence": "medium",
     "point130": {
-      "v": 11,
-      "lo": 1,
-      "hi": 65,
-      "k": 16,
-      "tier": "broad",
-      "note": "no parallel match — broad Dumornay median"
-    }
+      "v": 4.25,
+      "lo": 4.25,
+      "hi": 4.25,
+      "k": 1,
+      "tier": "close",
+      "note": "base Future Stars auto ~$4.25; Orange /25 auto trades thin"
+    },
+    "ebay_price": 20
   },
   {
     "n": 16,
@@ -1385,15 +1386,15 @@
       "Inferno /35 — $3.99 (Jun 16, 2026)",
       "Red /5 — $72.89 (May 17, 2026)"
     ],
-    "notes": "Rookie base Cracked Ice orange /25.",
+    "notes": "Rookie base Cracked Ice orange /25. [Verified regular Topps Chrome (not Sapphire): front reads Topps Chrome, back has no Sapphire line. Orange /25 RC ~$2.26.]",
     "confidence": "medium",
     "point130": {
-      "v": 1.98,
-      "lo": 1.98,
-      "hi": 85,
-      "k": 3,
-      "tier": "broad",
-      "note": "no parallel match — broad Layzell median"
+      "v": 2.26,
+      "lo": 2.26,
+      "hi": 2.26,
+      "k": 1,
+      "tier": "close",
+      "note": "Orange Cracked Ice /25 RC - 1 recent sale"
     }
   },
   {
