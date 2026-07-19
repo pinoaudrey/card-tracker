@@ -2695,30 +2695,31 @@
     "back": "IMG_8530",
     "player": "Lauren James",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL",
+    "set": "Topps Chrome Sapphire UWCL",
     "card_no": "10",
-    "parallel": "Cracked Ice",
+    "parallel": "Image Variation (SP)",
     "serial": "",
     "auto": false,
     "relic": false,
     "grade": "Raw",
     "team": "Chelsea FC",
-    "market_value": 6,
+    "market_value": 4,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Lauren James base parallels — Blue /150 $5.49, Aqua /199 $1.98 (Jul 2026)"
     ],
-    "notes": "Base #10 Cracked Ice. #10 Cracked Ice; estimated. NOTE: may overlap with batch-3 Lauren James #10 (card 72) — verify not a duplicate.",
+    "notes": "Base #10 Cracked Ice. #10 Cracked Ice; estimated. NOTE: may overlap with batch-3 Lauren James #10 (card 72) — verify not a duplicate. [Corrected to Sapphire Edition image-variation SP; 130pt comps re-pulled for the correct card (was mislabeled plain Chrome cracked-ice).]",
     "confidence": "low",
     "point130": {
-      "v": 4.5,
-      "lo": 1,
-      "hi": 55,
-      "k": 13,
-      "tier": "broad",
-      "note": "no parallel match — broad James median"
-    }
+      "v": 4.12,
+      "lo": 3.99,
+      "hi": 4.25,
+      "k": 2,
+      "tier": "close",
+      "note": "Sapphire image variation #10 (base ~$1.31)"
+    },
+    "ebay_price": 5
   },
   {
     "n": 87,
@@ -2726,30 +2727,31 @@
     "back": "IMG_8532",
     "player": "Giulia Gwinn",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL",
+    "set": "Topps Chrome Sapphire UWCL",
     "card_no": "22",
-    "parallel": "Cracked Ice",
+    "parallel": "Image Variation (SP)",
     "serial": "",
     "auto": false,
     "relic": false,
     "grade": "Raw",
     "team": "FC Bayern München",
-    "market_value": 5,
+    "market_value": 10,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Gwinn #22 base parallels — Orange /25 $11.50 (Jan 2026)"
     ],
-    "notes": "Base #22 Cracked Ice. #22 Cracked Ice; estimated.",
+    "notes": "Base #22 Cracked Ice. #22 Cracked Ice; estimated. [Corrected to Sapphire Edition image-variation SP; 130pt comps re-pulled for the correct card (was mislabeled plain Chrome cracked-ice).]",
     "confidence": "low",
     "point130": {
-      "v": 5.99,
-      "lo": 0.99,
-      "hi": 115,
-      "k": 19,
-      "tier": "broad",
-      "note": "no parallel match — broad Gwinn median"
-    }
+      "v": 10.38,
+      "lo": 3,
+      "hi": 16,
+      "k": 8,
+      "tier": "close",
+      "note": "Sapphire image variation #22"
+    },
+    "ebay_price": 15
   },
   {
     "n": 88,
@@ -2757,9 +2759,9 @@
     "back": "IMG_8534",
     "player": "Athenea del Castillo",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL",
+    "set": "Topps Chrome Sapphire UWCL",
     "card_no": "24",
-    "parallel": "Cracked Ice",
+    "parallel": "Image Variation (SP)",
     "serial": "",
     "auto": false,
     "relic": false,
@@ -2771,16 +2773,17 @@
     "comps": [
       "Athenea base parallels — ~$2–5"
     ],
-    "notes": "Base #24 Cracked Ice. #24 Cracked Ice (gold border). NOTE: likely overlaps with batch-3 Athenea #24 Gold Cracked Ice /75 (card 64) — verify not a duplicate.",
+    "notes": "Base #24 Cracked Ice. #24 Cracked Ice (gold border). NOTE: likely overlaps with batch-3 Athenea #24 Gold Cracked Ice /75 (card 64) — verify not a duplicate. [Corrected to Sapphire Edition image-variation SP; 130pt comps re-pulled for the correct card (was mislabeled plain Chrome cracked-ice).]",
     "confidence": "low",
     "point130": {
-      "v": 8.5,
-      "lo": 1,
-      "hi": 75,
-      "k": 17,
-      "tier": "broad",
-      "note": "no parallel match — broad Castillo median"
-    }
+      "v": 4.5,
+      "lo": 2.94,
+      "hi": 5.5,
+      "k": 4,
+      "tier": "close",
+      "note": "Sapphire image variation #24"
+    },
+    "ebay_price": 6
   },
   {
     "n": 89,
@@ -2788,30 +2791,31 @@
     "back": "IMG_8536",
     "player": "Sydney Schertenleib",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL",
+    "set": "Topps Chrome Sapphire UWCL",
     "card_no": "67",
-    "parallel": "Cracked Ice",
+    "parallel": "Image Variation (SP)",
     "serial": "",
     "auto": false,
     "relic": false,
     "grade": "Raw",
     "team": "FC Barcelona",
-    "market_value": 5,
+    "market_value": 10,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Schertenleib base parallels/RC — ~$3–10"
     ],
-    "notes": "Base #67 Cracked Ice RC. #67 Cracked Ice RC; estimated.",
+    "notes": "Base #67 Cracked Ice RC. #67 Cracked Ice RC; estimated. [Corrected to Sapphire Edition image-variation SP; 130pt comps re-pulled for the correct card (was mislabeled plain Chrome cracked-ice).]",
     "confidence": "low",
     "point130": {
-      "v": 10,
-      "lo": 1.2,
+      "v": 10.5,
+      "lo": 2.97,
       "hi": 100,
-      "k": 18,
-      "tier": "broad",
-      "note": "no parallel match — broad Schertenleib median"
-    }
+      "k": 3,
+      "tier": "close",
+      "note": "Sapphire image variation #67 - hot RC, volatile $3-100"
+    },
+    "ebay_price": 15
   },
   {
     "n": 90,
@@ -2819,9 +2823,9 @@
     "back": "IMG_8538",
     "player": "Bunny Shaw",
     "year": "2024-25",
-    "set": "Topps Chrome UWCL",
+    "set": "Topps Chrome Sapphire UWCL",
     "card_no": "81",
-    "parallel": "Cracked Ice",
+    "parallel": "Image Variation (SP)",
     "serial": "",
     "auto": false,
     "relic": false,
@@ -2833,16 +2837,17 @@
     "comps": [
       "Bunny Shaw base parallels — ~$2–5"
     ],
-    "notes": "Base #81 Cracked Ice. #81 Cracked Ice; estimated.",
+    "notes": "Base #81 Cracked Ice. #81 Cracked Ice; estimated. [Corrected to Sapphire Edition image-variation SP; 130pt comps re-pulled for the correct card (was mislabeled plain Chrome cracked-ice).]",
     "confidence": "low",
     "point130": {
-      "v": 7.5,
-      "lo": 1,
-      "hi": 125,
-      "k": 19,
-      "tier": "broad",
-      "note": "no parallel match — broad Shaw median"
-    }
+      "v": 3.69,
+      "lo": 1.61,
+      "hi": 3.69,
+      "k": 2,
+      "tier": "close",
+      "note": "Sapphire image variation #81, thin"
+    },
+    "ebay_price": 5
   },
   {
     "n": 91,
