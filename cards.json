@@ -416,13 +416,13 @@
   "year": "2024-25",
   "set": "Topps Chrome UWCL \u2014 Chrome Autograph (RC)",
   "card_no": "",
-  "parallel": "Orange",
+  "parallel": "Rose Gold Wave",
   "serial": "15/50",
   "auto": true,
   "relic": false,
   "grade": "Raw",
   "team": "Juventus",
-  "market_value": 12,
+  "market_value": 10,
   "last_sale": 11.5,
   "last_sale_date": "2026-06-15",
   "comps": [
@@ -430,8 +430,8 @@
    "Red Wave /5 \u2014 $71.68 (Jun 14, 2026)",
    "Purple /75 \u2014 $10.00 (Jun 20, 2026)"
   ],
-  "notes": "Rookie auto, orange /50.",
-  "confidence": "medium"
+  "notes": "Corrected to Rose Gold Wave auto /50 (not Orange). RC auto; comparable /50 autos ~$8\u201312.",
+  "confidence": "low"
  },
  {
   "n": 18,
@@ -737,22 +737,21 @@
   "back": "IMG_8412",
   "player": "Jaedyn Shaw",
   "year": "2023-24",
-  "set": "Panini Obsidian Soccer \u2014 Base",
-  "card_no": "12",
-  "parallel": "Electric Etch",
+  "set": "Panini Obsidian Soccer \u2014 Color Blast (SSP)",
+  "card_no": "",
+  "parallel": "Black Color Blast SSP",
   "serial": "",
   "auto": false,
   "relic": false,
   "grade": "Raw",
   "team": "USWNT",
-  "market_value": 5,
+  "market_value": 120,
   "last_sale": null,
   "last_sale_date": null,
   "comps": [
-   "Red Pulsar RC /49 \u2014 $15.00 (Jul 1, 2026)",
-   "Volcanic Signatures auto /199 \u2014 $9.50 (Jun 25, 2026)"
+   "Black Color Blast SSP \u2014 recent comps $59\u2013260 (grade/condition dependent)"
   ],
-  "notes": "Rookie base Obsidian. Base Obsidian #12 (Electric Etch, unnumbered); base ~$3\u20138, parallels/autos higher.",
+  "notes": "Corrected to Black Color Blast SSP insert (not base). Wide comp range $59\u2013260; raw copy estimated mid-range \u2014 verify against grade.",
   "confidence": "low"
  },
  {
@@ -955,21 +954,20 @@
   "year": "2025-26",
   "set": "Topps Chrome UWCL \u2014 Queens of Football",
   "card_no": "QF-7",
-  "parallel": "Refractor",
-  "serial": "01/80",
+  "parallel": "Black /10",
+  "serial": "/10",
   "auto": false,
   "relic": false,
   "grade": "Raw",
   "team": "OL Lyonnes",
-  "market_value": 5,
+  "market_value": 18,
   "last_sale": null,
   "last_sale_date": null,
   "comps": [
-   "Green /99 \u2014 $2.25 (Jun 21, 2026)",
-   "Gold /50 \u2014 $5.00 (May 5, 2026)",
-   "Base \u2014 $1.59 (May 21, 2026)"
+   "Base QF-7 \u2014 $1.59 (May 21, 2026)",
+   "Gold /50 \u2014 $5.00 (May 5, 2026)"
   ],
-  "notes": "Queens of Football insert, serial 01/80. QF-7 serial 01/80; QoF Bacha cards cheap ($1.59\u20135).",
+  "notes": "Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5).",
   "confidence": "low"
  },
  {
@@ -1226,22 +1224,21 @@
   "year": "2025-26",
   "set": "Topps Chrome UWCL \u2014 Chrome Autograph",
   "card_no": "CA-MY",
-  "parallel": "Green Refractor",
+  "parallel": "Aqua Refractor /199",
   "serial": "008/199",
   "auto": true,
   "relic": false,
   "grade": "Raw",
   "team": "Chelsea FC",
-  "market_value": 4,
-  "last_sale": 4.75,
-  "last_sale_date": "2026-07-08",
+  "market_value": 3,
+  "last_sale": null,
+  "last_sale_date": null,
   "comps": [
-   "Refractor Auto #CA-MY \u2014 $4.75 (Jul 8, 2026)",
-   "Blue /150 \u2014 $9.00 (Jul 14, 2026)",
-   "Black /10 Sapphire \u2014 $13.58 (Jul 7, 2026)"
+   "Aqua /199 \u2014 ~$1 (Jul 2026)",
+   "Base refractor auto #CA-MY \u2014 $4.75 (Jul 8, 2026)"
   ],
-  "notes": "On-card auto, green /199.",
-  "confidence": "medium"
+  "notes": "Corrected to Aqua Refractor /199 auto (not Green). Large-run parallel, ~$2\u20134.",
+  "confidence": "low"
  },
  {
   "n": 51,
@@ -1926,7 +1923,7 @@
   "year": "2024-25",
   "set": "Topps Chrome UWCL",
   "card_no": "82",
-  "parallel": "Red Refractor",
+  "parallel": "Rose Gold Refractor /50",
   "serial": "09/50",
   "auto": false,
   "relic": false,
@@ -1938,7 +1935,7 @@
   "comps": [
    "Williamson Red /50 comparable base parallels \u2014 ~$5\u20138"
   ],
-  "notes": "Base #82 Red /50. #82 Red /50; estimated.",
+  "notes": "Corrected to Rose Gold Refractor /50 (not Red). Comparable base /50 parallel, ~$5\u20138.",
   "confidence": "low"
  },
  {
@@ -2044,21 +2041,20 @@
   "year": "2024-25",
   "set": "Topps Chrome UWCL",
   "card_no": "100",
-  "parallel": "Green Refractor",
+  "parallel": "Aqua Refractor /199",
   "serial": "026/199",
   "auto": false,
   "relic": false,
   "grade": "Raw",
   "team": "Arsenal",
-  "market_value": 8,
-  "last_sale": null,
-  "last_sale_date": null,
+  "market_value": 3,
+  "last_sale": 1.25,
+  "last_sale_date": "2026-04-25",
   "comps": [
-   "Russo #100 Aqua /199 \u2014 $1.25 (Apr 25, 2026)",
-   "Russo #100 Green Wave /99 \u2014 $20.00 (Apr 19, 2026)"
+   "#100 Aqua Refractor /199 \u2014 $1.25 (Apr 25, 2026)"
   ],
-  "notes": "Base #100 Green /199. #100 Green /199; between cheap /199 and Green /99 \u2014 estimated.",
-  "confidence": "low"
+  "notes": "Corrected to Aqua Refractor /199 (not Green). Large-run parallel, ~$1\u20133.",
+  "confidence": "medium"
  },
  {
   "n": 85,
@@ -2547,7 +2543,7 @@
   "set": "Topps Chrome US Olympic & Paralympic Team Hopefuls \u2014 Autograph",
   "card_no": "AU-SSM",
   "parallel": "",
-  "serial": "189/230",
+  "serial": "189/238",
   "auto": true,
   "relic": false,
   "grade": "Raw",
@@ -2557,10 +2553,9 @@
   "last_sale_date": null,
   "comps": [
    "Base Refractor Auto /238 \u2014 $35.00 (Apr 12, 2026)",
-   "Green /99 Auto \u2014 $27\u201345 (2026)",
-   "Gold Var /50 \u2014 $131.00 (Jul 5, 2026)"
+   "Green /99 Auto \u2014 $27\u201345 (2026)"
   ],
-  "notes": "On-card auto /230. Base auto /230; comparable base /238 sold $35.",
+  "notes": "Serial denominator corrected to /238 (189/238). Base auto; comparable base /238 sold $35.",
   "confidence": "medium"
  },
  {
@@ -2643,7 +2638,7 @@
   "year": "2023-24",
   "set": "Topps Chrome UWCL \u2014 Queens of Football",
   "card_no": "QF-9",
-  "parallel": "Numbered /25",
+  "parallel": "Orange /25",
   "serial": "07/25",
   "auto": false,
   "relic": false,
@@ -2655,7 +2650,7 @@
   "comps": [
    "Caicedo QoF & numbered inserts \u2014 ~$10\u201320"
   ],
-  "notes": "QoF insert /25. 2023-24 QoF QF-9 /25; no direct comp \u2014 Caicedo is a star, estimated.",
+  "notes": "Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15.",
   "confidence": "low"
  },
  {
