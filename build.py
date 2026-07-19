@@ -99,6 +99,8 @@ main{padding:20px;max-width:1400px;margin:0 auto}
 .player a{color:var(--text)}
 .team{color:var(--muted);font-size:12px}
 .val .big{font-size:18px;font-weight:800;color:var(--accent);text-align:right;white-space:nowrap}
+.p130{font-size:11px;color:var(--muted);text-align:right;white-space:nowrap;margin-top:2px}
+.p130 b{color:var(--text);font-weight:700}.p130.rough b{color:var(--muted)}
 .setline{font-size:12px;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
 .chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:10.5px;font-weight:600}
@@ -210,7 +212,7 @@ def chips_html(c):
 client = []
 for c in cards:
     client.append({k: c.get(k) for k in ("n","player","team","year","set","card_no","parallel","serial",
-        "auto","relic","grade","market_value","last_sale","last_sale_date","confidence","front","back","notes","comps")})
+        "auto","relic","grade","market_value","last_sale","last_sale_date","confidence","front","back","notes","comps","point130")})
 CARDS_JSON = json.dumps(client)
 HIST_TOTALS = json.dumps([{"date": s["date"], "value": s.get("total")} for s in history])
 DUP_JSON = json.dumps(dupinfo)
@@ -244,8 +246,8 @@ INDEX = f"""<!doctype html><html lang="en"><head>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none">No cards in this view.</div>
 </main>
-<footer>Prices from Card Ladder recent sales &middot; click any card for full details &amp; price history &middot;
-  your Paid/Sold entries are saved in this browser (Export to back up).</footer>
+<footer>Green value = Card Ladder market est. &middot; <b>130pt</b> = median of matched 130point sold listings (&ldquo;~&rdquo; = loose/thin match, treat as rough) &middot;
+  click any card for both values, the sold-count and range &middot; Paid/Sold entries saved in this browser (Export to back up).</footer>
 <script>
 const CARDS={CARDS_JSON};
 const HIST={HIST_TOTALS};
@@ -274,7 +276,7 @@ function cardHTML(c){{
     <div class="body">
       <div class="top"><div><p class="player"><a href="cards/${{c.n}}.html">${{c.player}}</a></p>
         <div class="team">${{c.team||''}}</div></div>
-        <div class="val"><div class="big">${{money(c.market_value)}}</div></div></div>
+        <div class="val"><div class="big">${{money(c.market_value)}}</div>${{c.point130?`<div class="p130 ${{c.point130.rough?'rough':''}}">130pt&nbsp;<b>${{money(c.point130.v)}}</b>${{c.point130.rough?'&nbsp;~':''}}</div>`:''}}</div></div>
       <div class="setline">${{c.year||''}} ${{c.set||''}} ${{c.card_no?'&middot; #'+c.card_no:''}}<br>${{c.parallel||''}}</div>
       <div class="chips">${{chips}}</div>
       <details class="track"${{isSold?' open':''}}><summary><span class="track-sum">${{trackSummary(c,s)}}</span></summary>
@@ -348,6 +350,12 @@ for c in cards:
         dupwarn = f'<div class="dupwarn">&#9888; {label}: {partners}. Verify these are different physical cards before trusting the count/total.</div>'
     back_img = f'<figure><img src="../images/{esc(c["back"])}.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure>' if c.get("back") else ""
     front_img = f'<figure><img src="../images/{esc(c["front"])}.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure>' if c.get("front") else ""
+    _p = c.get("point130")
+    if _p:
+        _rough = ' <span style="color:var(--warn)">(rough match)</span>' if _p["rough"] else ''
+        p130row = f'<span class="k">130point</span><span>{money(_p["v"])} &middot; {_p["k"]} sold &middot; {money(_p["lo"])}&ndash;{money(_p["hi"])}{_rough}</span>'
+    else:
+        p130row = '<span class="k">130point</span><span>&mdash; no match</span>'
     DETAIL = f"""<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(c['player'])} &middot; Card Tracker</title><link rel="stylesheet" href="../assets/style.css">
@@ -369,6 +377,8 @@ for c in cards:
       <span class="k">Parallel</span><span>{esc(c.get('parallel')) or '&mdash;'}</span>
       <span class="k">Serial</span><span>{esc(c.get('serial')) or '&mdash;'}</span>
       <span class="k">Last sale</span><span>{money(c.get('last_sale'))} {('&middot; '+esc(c.get('last_sale_date'))) if c.get('last_sale_date') else ''}</span>
+      <span class="k">Card Ladder</span><span>{money(c.get('market_value'))} <span style="color:var(--muted)">(market est.)</span></span>
+      {p130row}
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps">{comps}</ul></div>
     {f'<div class="section"><h3>Notes</h3><div class="notes">{esc(c.get("notes"))}</div></div>' if c.get('notes') else ''}

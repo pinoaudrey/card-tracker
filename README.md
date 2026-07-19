@@ -49,8 +49,10 @@ The Card Ladder search technique (for a future `add-card` skill): set the search
 `.github/workflows/deploy.yml` rebuilds the site and deploys `docs/` on every push to `main`.
 Pages for a **private** repo needs a paid GitHub plan (Pro/Team); on the free plan, either keep it local (`docs/index.html`) or make the repo public — but note the pages embed personal card photos.
 
-## Pricing & confidence
-Estimates come from recent Card Ladder sale comps; each card has a confidence flag (**high** = exact-parallel comp, **medium/low** = estimated). See each card's notes.
+## Pricing
+Two independent sources per card:
+- **Card Ladder** (the green value) — the primary market estimate, with a confidence flag (**high** = exact-parallel comp, **medium/low** = estimated). See each card's notes.
+- **130pt** — the median of matched sold listings from [130point](https://130point.com) (eBay + auction houses), pulled via its search API. A **~** means the parallel match was loose or thin (e.g. a graded card's median got mixed with raw copies, or an auto with base) — treat those as rough. The detail page shows the sold-count and low–high range so you can judge. Where the two sources agree, confidence is high; where they diverge, it's a card worth a manual look (e.g. #34 Russo Orange /25).
 
 ## To verify
 - Miedema 2021-22 #10 print run (read as /75; only /25 comps exist).
