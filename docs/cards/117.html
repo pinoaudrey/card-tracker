@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kim Little &middot; Card Tracker</title><link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/tracker.js" defer></script></head><body>
+<div class="detail">
+<a class="back" href="../index.html">&larr; Back to collection</a>
+
+<div class="dhead"><div><h1>Kim Little</h1><div class="team">Arsenal</div></div>
+  <div style="text-align:right"><div class="dbig">$10</div>
+  <div class="team">market est. &middot; low confidence</div></div></div>
+<div class="chips" style="margin-top:10px"><span class="chip">#56/99</span></div>
+<div class="dimgs"><figure><img src="../images/IMG_8592.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8593.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
+<div class="dcols">
+  <div>
+    <div class="section"><h3>Card</h3><div class="kv">
+      <span class="k">Year</span><span>2021-22</span>
+      <span class="k">Set</span><span>Topps Chrome Women&#x27;s UCL</span>
+      <span class="k">Card #</span><span>2</span>
+      <span class="k">Parallel</span><span>Green Refractor</span>
+      <span class="k">Serial</span><span>56/99</span>
+      <span class="k">Last sale</span><span>&mdash; </span>
+    </div></div>
+    <div class="section"><h3>Recent comps</h3><ul class="comps"><li>2021-22 Green Neon /99 comparable — raw ~$8–12</li></ul></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Rookie #2 Green /99. #2 Green /99 RC; Kim Little is a respected Arsenal name — estimated.</div></div>
+  </div>
+  <div>
+    <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
+    <div class="section"><h3>Cost &amp; sale</h3>
+      <div class="track-body">
+        <div class="money-row"><label>Paid</label><span>$</span><input class="money" id="paid" type="number" min="0" step="0.01" placeholder="0"></div>
+        <label class="soldline"><input type="checkbox" id="soldchk"> Mark as sold</label>
+        <div class="money-row"><label>Sold for</label><span>$</span><input class="money" id="soldfor" type="number" min="0" step="0.01" placeholder="0"></div>
+        <div class="plrow" id="plrow"></div>
+      </div></div>
+  </div>
+</div>
+<div style="text-align:right;color:var(--muted);font-size:11px;margin-top:8px">IMG_8592 / IMG_8593</div>
+</div>
+<div class="lightbox" id="lb"><img id="lbimg" src=""></div>
+<script>
+const C={"n": 117, "player": "Kim Little", "team": "Arsenal", "year": "2021-22", "set": "Topps Chrome Women's UCL", "card_no": "2", "parallel": "Green Refractor", "serial": "56/99", "auto": false, "relic": false, "grade": "Raw", "market_value": 10, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8592", "back": "IMG_8593", "notes": "Rookie #2 Green /99. #2 Green /99 RC; Kim Little is a respected Arsenal name \u2014 estimated.", "comps": ["2021-22 Green Neon /99 comparable \u2014 raw ~$8\u201312"]};
+const SERIES=[{"date": "2026-07-18", "value": 10}];
+function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
+function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
+function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}
+  return v==null?'<span class="pl zero">enter a cost</span>':`<span class="pl ${plClass(v)}">${signed(v)}${lab}</span>`;}
+window.addEventListener('DOMContentLoaded',()=>{
+  drawChart(document.getElementById('cchart'),SERIES,{w:460,h:150});
+  const s=st(C.n);const paid=document.getElementById('paid'),sf=document.getElementById('soldfor'),chk=document.getElementById('soldchk'),pr=document.getElementById('plrow');
+  if(s.paid!=null)paid.value=s.paid;if(s.soldFor!=null)sf.value=s.soldFor;chk.checked=!!s.sold;pr.innerHTML=plHTML(s);
+  paid.addEventListener('input',()=>{setSt(C.n,{paid:numv(paid.value)});pr.innerHTML=plHTML(st(C.n));});
+  sf.addEventListener('input',()=>{setSt(C.n,{soldFor:numv(sf.value)});pr.innerHTML=plHTML(st(C.n));});
+  chk.addEventListener('change',()=>{if(chk.checked){setSt(C.n,{sold:true,soldFor:st(C.n).soldFor??(C.market_value??null)});if(sf.value==='')sf.value=C.market_value??'';}else setSt(C.n,{sold:false});pr.innerHTML=plHTML(st(C.n));});
+});
+function zoom(u){const lb=document.getElementById('lb');document.getElementById('lbimg').src=u;lb.style.display='flex';}
+document.getElementById('lb').onclick=function(){this.style.display='none';};
+</script></body></html>

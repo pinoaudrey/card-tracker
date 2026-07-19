@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melvine Malard &middot; Card Tracker</title><link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/tracker.js" defer></script></head><body>
+<div class="detail">
+<a class="back" href="../index.html">&larr; Back to collection</a>
+
+<div class="dhead"><div><h1>Melvine Malard</h1><div class="team">Manchester United</div></div>
+  <div style="text-align:right"><div class="dbig">$8</div>
+  <div class="team">market est. &middot; high confidence</div></div></div>
+<div class="chips" style="margin-top:10px"><span class="chip auto">AUTO</span><span class="chip">#074/299</span></div>
+<div class="dimgs"><figure><img src="../images/IMG_8447.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8448.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
+<div class="dcols">
+  <div>
+    <div class="section"><h3>Card</h3><div class="kv">
+      <span class="k">Year</span><span>2025-26</span>
+      <span class="k">Set</span><span>Topps Chrome UWCL — Queens of Football Autographs</span>
+      <span class="k">Card #</span><span>QFA-MM</span>
+      <span class="k">Parallel</span><span>&mdash;</span>
+      <span class="k">Serial</span><span>074/299</span>
+      <span class="k">Last sale</span><span>$15.50 &middot; 2026-07-15</span>
+    </div></div>
+    <div class="section"><h3>Recent comps</h3><ul class="comps"><li>QoF Auto /299 — $15.50 (Jul 15, 2026)</li><li>QoF Auto /299 — $8.01 (Jul 7, 2026)</li><li>QoF Auto /299 — $5.50 (Jul 6, 2026)</li></ul></div>
+    <div class="section"><h3>Notes</h3><div class="notes">On-card auto /299.</div></div>
+  </div>
+  <div>
+    <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
+    <div class="section"><h3>Cost &amp; sale</h3>
+      <div class="track-body">
+        <div class="money-row"><label>Paid</label><span>$</span><input class="money" id="paid" type="number" min="0" step="0.01" placeholder="0"></div>
+        <label class="soldline"><input type="checkbox" id="soldchk"> Mark as sold</label>
+        <div class="money-row"><label>Sold for</label><span>$</span><input class="money" id="soldfor" type="number" min="0" step="0.01" placeholder="0"></div>
+        <div class="plrow" id="plrow"></div>
+      </div></div>
+  </div>
+</div>
+<div style="text-align:right;color:var(--muted);font-size:11px;margin-top:8px">IMG_8447 / IMG_8448</div>
+</div>
+<div class="lightbox" id="lb"><img id="lbimg" src=""></div>
+<script>
+const C={"n": 48, "player": "Melvine Malard", "team": "Manchester United", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football Autographs", "card_no": "QFA-MM", "parallel": "", "serial": "074/299", "auto": true, "relic": false, "grade": "Raw", "market_value": 8, "last_sale": 15.5, "last_sale_date": "2026-07-15", "confidence": "high", "front": "IMG_8447", "back": "IMG_8448", "notes": "On-card auto /299.", "comps": ["QoF Auto /299 \u2014 $15.50 (Jul 15, 2026)", "QoF Auto /299 \u2014 $8.01 (Jul 7, 2026)", "QoF Auto /299 \u2014 $5.50 (Jul 6, 2026)"]};
+const SERIES=[{"date": "2026-07-18", "value": 8}];
+function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
+function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
+function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}
+  return v==null?'<span class="pl zero">enter a cost</span>':`<span class="pl ${plClass(v)}">${signed(v)}${lab}</span>`;}
+window.addEventListener('DOMContentLoaded',()=>{
+  drawChart(document.getElementById('cchart'),SERIES,{w:460,h:150});
+  const s=st(C.n);const paid=document.getElementById('paid'),sf=document.getElementById('soldfor'),chk=document.getElementById('soldchk'),pr=document.getElementById('plrow');
+  if(s.paid!=null)paid.value=s.paid;if(s.soldFor!=null)sf.value=s.soldFor;chk.checked=!!s.sold;pr.innerHTML=plHTML(s);
+  paid.addEventListener('input',()=>{setSt(C.n,{paid:numv(paid.value)});pr.innerHTML=plHTML(st(C.n));});
+  sf.addEventListener('input',()=>{setSt(C.n,{soldFor:numv(sf.value)});pr.innerHTML=plHTML(st(C.n));});
+  chk.addEventListener('change',()=>{if(chk.checked){setSt(C.n,{sold:true,soldFor:st(C.n).soldFor??(C.market_value??null)});if(sf.value==='')sf.value=C.market_value??'';}else setSt(C.n,{sold:false});pr.innerHTML=plHTML(st(C.n));});
+});
+function zoom(u){const lb=document.getElementById('lb');document.getElementById('lbimg').src=u;lb.style.display='flex';}
+document.getElementById('lb').onclick=function(){this.style.display='none';};
+</script></body></html>

@@ -1,0 +1,3 @@
+# build.py, check_dupes.py, refresh_snapshot.py use only the Python standard library.
+# Pillow is needed only if you regenerate the images in docs/images/ from full-res originals.
+pillow

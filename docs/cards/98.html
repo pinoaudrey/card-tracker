@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caroline Graham Hansen &middot; Card Tracker</title><link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/tracker.js" defer></script></head><body>
+<div class="detail">
+<a class="back" href="../index.html">&larr; Back to collection</a>
+
+<div class="dhead"><div><h1>Caroline Graham Hansen</h1><div class="team">Norway</div></div>
+  <div style="text-align:right"><div class="dbig">$30</div>
+  <div class="team">market est. &middot; low confidence</div></div></div>
+<div class="chips" style="margin-top:10px"><span class="chip grade">SGC 10</span></div>
+<div class="dimgs"><figure><img src="../images/IMG_8553.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8554.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
+<div class="dcols">
+  <div>
+    <div class="section"><h3>Card</h3><div class="kv">
+      <span class="k">Year</span><span>2023</span>
+      <span class="k">Set</span><span>Panini Donruss WWC — Intergalactic</span>
+      <span class="k">Card #</span><span>14</span>
+      <span class="k">Parallel</span><span>Intergalactic</span>
+      <span class="k">Serial</span><span>&mdash;</span>
+      <span class="k">Last sale</span><span>&mdash; </span>
+    </div></div>
+    <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Intergalactic #14 SSP (raw) — $3.25–17.99 (2026)</li></ul></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Graded SGC 10. Intergalactic insert. Graded SGC 10; raw Intergalactic $3–18, SGC 10 estimated with grade premium.</div></div>
+  </div>
+  <div>
+    <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
+    <div class="section"><h3>Cost &amp; sale</h3>
+      <div class="track-body">
+        <div class="money-row"><label>Paid</label><span>$</span><input class="money" id="paid" type="number" min="0" step="0.01" placeholder="0"></div>
+        <label class="soldline"><input type="checkbox" id="soldchk"> Mark as sold</label>
+        <div class="money-row"><label>Sold for</label><span>$</span><input class="money" id="soldfor" type="number" min="0" step="0.01" placeholder="0"></div>
+        <div class="plrow" id="plrow"></div>
+      </div></div>
+  </div>
+</div>
+<div style="text-align:right;color:var(--muted);font-size:11px;margin-top:8px">IMG_8553 / IMG_8554</div>
+</div>
+<div class="lightbox" id="lb"><img id="lbimg" src=""></div>
+<script>
+const C={"n": 98, "player": "Caroline Graham Hansen", "team": "Norway", "year": "2023", "set": "Panini Donruss WWC \u2014 Intergalactic", "card_no": "14", "parallel": "Intergalactic", "serial": "", "auto": false, "relic": false, "grade": "SGC 10", "market_value": 30, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8553", "back": "IMG_8554", "notes": "Graded SGC 10. Intergalactic insert. Graded SGC 10; raw Intergalactic $3\u201318, SGC 10 estimated with grade premium.", "comps": ["Intergalactic #14 SSP (raw) \u2014 $3.25\u201317.99 (2026)"]};
+const SERIES=[{"date": "2026-07-18", "value": 30}];
+function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
+function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
+function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}
+  return v==null?'<span class="pl zero">enter a cost</span>':`<span class="pl ${plClass(v)}">${signed(v)}${lab}</span>`;}
+window.addEventListener('DOMContentLoaded',()=>{
+  drawChart(document.getElementById('cchart'),SERIES,{w:460,h:150});
+  const s=st(C.n);const paid=document.getElementById('paid'),sf=document.getElementById('soldfor'),chk=document.getElementById('soldchk'),pr=document.getElementById('plrow');
+  if(s.paid!=null)paid.value=s.paid;if(s.soldFor!=null)sf.value=s.soldFor;chk.checked=!!s.sold;pr.innerHTML=plHTML(s);
+  paid.addEventListener('input',()=>{setSt(C.n,{paid:numv(paid.value)});pr.innerHTML=plHTML(st(C.n));});
+  sf.addEventListener('input',()=>{setSt(C.n,{soldFor:numv(sf.value)});pr.innerHTML=plHTML(st(C.n));});
+  chk.addEventListener('change',()=>{if(chk.checked){setSt(C.n,{sold:true,soldFor:st(C.n).soldFor??(C.market_value??null)});if(sf.value==='')sf.value=C.market_value??'';}else setSt(C.n,{sold:false});pr.innerHTML=plHTML(st(C.n));});
+});
+function zoom(u){const lb=document.getElementById('lb');document.getElementById('lbimg').src=u;lb.style.display='flex';}
+document.getElementById('lb').onclick=function(){this.style.display='none';};
+</script></body></html>

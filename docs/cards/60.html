@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Millie Bright &middot; Card Tracker</title><link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/tracker.js" defer></script></head><body>
+<div class="detail">
+<a class="back" href="../index.html">&larr; Back to collection</a>
+<div class="dupwarn">&#9888; Shares player + card # with: <a href="58.html">Millie Bright (Sunset /50 )</a>, <a href="66.html">Millie Bright (Gold Cracked Ice /75 )</a>. Verify these are different physical cards before trusting the count/total.</div>
+<div class="dhead"><div><h1>Millie Bright</h1><div class="team">Chelsea FC</div></div>
+  <div style="text-align:right"><div class="dbig">$5</div>
+  <div class="team">market est. &middot; low confidence</div></div></div>
+<div class="chips" style="margin-top:10px"></div>
+<div class="dimgs"><figure><img src="../images/IMG_8472.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8473.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
+<div class="dcols">
+  <div>
+    <div class="section"><h3>Card</h3><div class="kv">
+      <span class="k">Year</span><span>2024-25</span>
+      <span class="k">Set</span><span>Topps Chrome UWCL</span>
+      <span class="k">Card #</span><span>19</span>
+      <span class="k">Parallel</span><span>Red Cracked Ice /50</span>
+      <span class="k">Serial</span><span>&mdash;</span>
+      <span class="k">Last sale</span><span>&mdash; </span>
+    </div></div>
+    <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Sapphire Orange /25 — $4.99 (Jul 12, 2026)</li><li>Pink Wave /250 — $1.98 (Jul 17, 2026)</li></ul></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Base #19 Red Cracked Ice /50. Base #19 Red Cracked Ice /50; no direct comp — Bright base parallels $2–5.</div></div>
+  </div>
+  <div>
+    <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
+    <div class="section"><h3>Cost &amp; sale</h3>
+      <div class="track-body">
+        <div class="money-row"><label>Paid</label><span>$</span><input class="money" id="paid" type="number" min="0" step="0.01" placeholder="0"></div>
+        <label class="soldline"><input type="checkbox" id="soldchk"> Mark as sold</label>
+        <div class="money-row"><label>Sold for</label><span>$</span><input class="money" id="soldfor" type="number" min="0" step="0.01" placeholder="0"></div>
+        <div class="plrow" id="plrow"></div>
+      </div></div>
+  </div>
+</div>
+<div style="text-align:right;color:var(--muted);font-size:11px;margin-top:8px">IMG_8472 / IMG_8473</div>
+</div>
+<div class="lightbox" id="lb"><img id="lbimg" src=""></div>
+<script>
+const C={"n": 60, "player": "Millie Bright", "team": "Chelsea FC", "year": "2024-25", "set": "Topps Chrome UWCL", "card_no": "19", "parallel": "Red Cracked Ice /50", "serial": "", "auto": false, "relic": false, "grade": "Raw", "market_value": 5, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8472", "back": "IMG_8473", "notes": "Base #19 Red Cracked Ice /50. Base #19 Red Cracked Ice /50; no direct comp \u2014 Bright base parallels $2\u20135.", "comps": ["Sapphire Orange /25 \u2014 $4.99 (Jul 12, 2026)", "Pink Wave /250 \u2014 $1.98 (Jul 17, 2026)"]};
+const SERIES=[{"date": "2026-07-18", "value": 5}];
+function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
+function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
+function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}
+  return v==null?'<span class="pl zero">enter a cost</span>':`<span class="pl ${plClass(v)}">${signed(v)}${lab}</span>`;}
+window.addEventListener('DOMContentLoaded',()=>{
+  drawChart(document.getElementById('cchart'),SERIES,{w:460,h:150});
+  const s=st(C.n);const paid=document.getElementById('paid'),sf=document.getElementById('soldfor'),chk=document.getElementById('soldchk'),pr=document.getElementById('plrow');
+  if(s.paid!=null)paid.value=s.paid;if(s.soldFor!=null)sf.value=s.soldFor;chk.checked=!!s.sold;pr.innerHTML=plHTML(s);
+  paid.addEventListener('input',()=>{setSt(C.n,{paid:numv(paid.value)});pr.innerHTML=plHTML(st(C.n));});
+  sf.addEventListener('input',()=>{setSt(C.n,{soldFor:numv(sf.value)});pr.innerHTML=plHTML(st(C.n));});
+  chk.addEventListener('change',()=>{if(chk.checked){setSt(C.n,{sold:true,soldFor:st(C.n).soldFor??(C.market_value??null)});if(sf.value==='')sf.value=C.market_value??'';}else setSt(C.n,{sold:false});pr.innerHTML=plHTML(st(C.n));});
+});
+function zoom(u){const lb=document.getElementById('lb');document.getElementById('lbimg').src=u;lb.style.display='flex';}
+document.getElementById('lb').onclick=function(){this.style.display='none';};
+</script></body></html>
