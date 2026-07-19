@@ -38,6 +38,24 @@ Query rules (important):
 - If a query returns nothing, broaden it (drop the parallel/serial, keep player + product).
 - One broad search often covers several of a player's cards at once.
 
+## 3b. Cross-check on 130point (second source)
+Card Ladder is the primary value; 130point (eBay + auction-house sold listings) is an independent sanity check. It ships as the `point130` field and the `130pt` number on the site.
+
+1. Navigate the browser to `https://130point.com/search`. Wait for the Cloudflare **"Just a moment..."** challenge to clear (~5s, title becomes "130 Point") so in-page fetches inherit clearance.
+2. Paste the contents of **`p130.js`** (in this skill folder) via `javascript_tool` once, to define `window.p130`.
+3. Call it for the card and read the result on the **next** step:
+   ```js
+   await p130("<Player> <year> <product> <parallel words>", "<LastName>", "<ParallelWord>", <printRun|0>, <year|0>, <auto 0|1>, "<PSA|SGC|TAG|"">")
+   ```
+   e.g. `await p130("Katie McCabe 2024 Futera Gold", "McCabe", "Superstars", 11, 2024, 0, "")`.
+4. It returns `{v, lo, hi, k, tier, note}` (tier = `exact` | `close` | `broad`), or `{v:null, tier:"none"}` if nothing matched. Store it verbatim as the card's `point130` (drop `note` when empty; use `null` for `none`).
+
+Rules:
+- Unlike Card Ladder, the **130point query CAN include parallel words** — its search indexes them. Still keep `parallelKey` to one distinctive word.
+- **Tiers**: `exact` = parallel + run + year all matched; `close` = same parallel but the exact run/year had no sales (the `note` says what it fell back to, e.g. `/50 (card /75)`); `broad` = parallel never matched, so it's the player's overall median (directional only). This tiering is the point of the second source — a `close`/`broad` value with an honest note beats a fake-precise number.
+- **Rate limit**: after ~150 API hits Cloudflare returns `{err:403}`. Reload `https://130point.com/search`, wait ~5s for the challenge to clear, then continue. For a bulk re-run, throttle to sequential calls (~180ms apart), not `Promise.all`.
+- If `v` is far from Card Ladder on an `exact` match, note it (it's a genuine divergence worth flagging, not a matching artifact).
+
 ## 4. Price it + set confidence
 - **market_value**: the most recent sale of the **exact** parallel + print run. If there's no exact comp, estimate from sibling parallels (scale by rarity: a `/50` sits below a `/25`, above a `/99`), and lower the confidence.
 - **Graded**: SGC / TAG / CGC trade a bit **under** PSA. Price off PSA 10/9 comps and shade down.
@@ -57,10 +75,11 @@ Use the next `n` (current max + 1). Record schema (match existing rows):
   "market_value": 42, "last_sale": 40, "last_sale_date": "2026-04-20",
   "comps": ["Gold /50 — $40.00 (Apr 20, 2026)", "Black /10 — $52.00 (Feb 4, 2026)"],
   "notes": "Short note; flag any estimate or thing to verify.",
-  "confidence": "high"
+  "confidence": "high",
+  "point130": {"v": 44, "lo": 38, "hi": 61, "k": 5, "tier": "exact"}
 }
 ```
-Fields: `market_value` / `last_sale` are numbers (or `null`); `comps` is an array; `auto`/`relic` are booleans. `front`/`back` are the image basenames (no `.jpg`).
+Fields: `market_value` / `last_sale` are numbers (or `null`); `comps` is an array; `auto`/`relic` are booleans. `front`/`back` are the image basenames (no `.jpg`). `point130` is the object returned by `p130()` (step 3b), or `null` if no comps matched — include its `note` string only when it's a `close`/`broad` match.
 
 ## 6. Rebuild
 ```bash
@@ -71,8 +90,9 @@ python build.py             # regenerate index + detail pages
 Then open `docs/index.html` (or the new `docs/cards/<n>.html`) to confirm, and commit if the user wants it in the repo.
 
 ## Gotchas (hard-won)
-- **Search debounce** — always `form_input` then read on the *next* step.
-- **Parallel words aren't searchable** — broad player+product queries only.
+- **Search debounce** (Card Ladder) — always `form_input` then read on the *next* step.
+- **Parallel words aren't searchable on Card Ladder** — broad player+product queries only. (130point is the opposite: it *does* index parallel words.)
 - **SGC/TAG < PSA** — shade graded values down from PSA comps.
 - **No-comp base parallels are common** — estimate + `low` confidence, don't fake precision.
 - **Duplicates** — the same player + card # across photo batches may be a re-shoot, not a second card. Run `check_dupes.py`; if it's a genuine duplicate, don't add it.
+- **130point Cloudflare** — you must load `https://130point.com/search` in the browser and let the challenge clear before `p130()` works; `{err:403}` means you've been rate-limited (~150 hits), so reload + wait ~5s. Run `p130` calls in-page (`javascript_tool`), never as an external fetch — they need the browser's Cloudflare clearance.
