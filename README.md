@@ -7,9 +7,11 @@ Open `docs/index.html` locally, or view it live on GitHub Pages.
 ```
 cards.json              # source of truth: one record per card (id, price, comps, notes)
 build.py                # generates the docs/ site from cards.json (stdlib only)
+ingest_images.py        # convert card photos into docs/images/ (HEIC via macOS `sips`)
 refresh_snapshot.py     # logs a dated value snapshot to history/
 check_dupes.py          # flags possible duplicate cards
 history/snapshots.json  # value-over-time history (one point per refresh)
+.claude/skills/add-card # Claude Code skill: identify, price, and add a card
 docs/                   # the generated site (this is what GitHub Pages serves)
   index.html            #   gallery + collection value chart
   cards/<n>.html        #   one detail page per card (big images, comps, price history)
@@ -29,6 +31,12 @@ python build.py            # regenerate the site after editing cards.json
 python check_dupes.py      # report likely duplicates / same player+card# to review
 python refresh_snapshot.py # append today's values to history, then re-run build.py
 ```
+
+### Adding a card
+Drop the card's photo(s) and use the **`add-card`** skill (`.claude/skills/add-card/`) — it walks through
+ingesting the images, identifying the card, checking Card Ladder comps, pricing it, appending to
+`cards.json`, and rebuilding. Or do it by hand: `python ingest_images.py <photos>`, add a row to
+`cards.json`, then `python build.py`.
 
 ### Refreshing prices
 1. Update `market_value` (and comps) in `cards.json` — re-check Card Ladder for recent sales.
