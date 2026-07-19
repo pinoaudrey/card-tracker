@@ -37,15 +37,15 @@ QUANTITY = 1
 DURATION = "GTC"                # Good-'Til-Cancelled (required for FixedPrice)
 
 # Your account specifics. Blank = leave the column empty and finish in Seller Hub.
-LOCATION_ZIP = ""               # e.g. "94110" — required to publish
-SHIPPING_POLICY = ""            # named business-policy titles from your eBay account
-RETURN_POLICY = ""
-PAYMENT_POLICY = ""
+LOCATION_ZIP = "64102"          # Kansas City, MO
+SHIPPING_POLICY = "Cards - package"   # named business-policy titles from your eBay account
+RETURN_POLICY = "No returns"          # must match a "returns not accepted" policy in your account
+PAYMENT_POLICY = "Cards - immediate"  # must match your payment policy name exactly
 
 # Photos: eBay needs public HTTPS image URLs. The repo images are local/private,
 # so this is blank by default and you add photos per row in Seller Hub. If you
 # host docs/images somewhere public, set the base URL (no trailing slash).
-IMAGE_BASE_URL = ""             # e.g. "https://example.com/card-images"
+IMAGE_BASE_URL = "https://raw.githubusercontent.com/pinoaudrey/card-tracker/main/docs/images"
 
 # Ungraded cards need a Card Condition descriptor. Leave "" to pick per card in
 # Seller Hub, or set a default you're comfortable asserting for the batch.
