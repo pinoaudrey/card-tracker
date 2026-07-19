@@ -1,9 +1,12 @@
 name: Build & deploy to Pages
 
+# GitHub Pages for a PRIVATE repo requires a paid plan (Pro/Team). When you're ready:
+#   Settings > Pages > Source: "GitHub Actions", then run this workflow (or add the
+#   push trigger below to auto-deploy on every push to main).
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+  # push:
+  #   branches: [main]
 
 permissions:
   contents: read
