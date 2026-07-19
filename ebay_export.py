@@ -65,6 +65,8 @@ def money(v):
 
 
 def pick_price(c):
+    if c.get("ebay_price") is not None:      # per-card manual override, wins over any source
+        return round(max(float(c["ebay_price"]), MIN_PRICE), 2)
     mv = c.get("market_value")
     p130 = (c.get("point130") or {}).get("v")
     if PRICE_SOURCE == "point130":
