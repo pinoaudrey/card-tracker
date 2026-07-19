@@ -45,6 +45,25 @@ ingesting the images, identifying the card, checking Card Ladder comps, pricing 
 
 The Card Ladder search technique (for a future `add-card` skill): set the search box value, read the results dropdown **on a separate step** (it debounces), use **broad** queries — parallel words like *cracked ice* / *sunset* aren't indexed. Graded SGC/TAG trade a bit under PSA.
 
+## Selling on eBay (bulk CSV)
+`ebay_export.py` turns `cards.json` into an eBay File Exchange upload for **Sports Trading Card Singles** (category `261328`). Nothing here touches eBay directly, so you review everything in Seller Hub before it lists.
+
+```bash
+python ebay_export.py                     # -> exports/ebay_listings.csv (priced off Card Ladder)
+python ebay_export.py --price point130    # price off the 130pt median instead
+python ebay_export.py --price max         # the higher of the two
+python ebay_export.py --only 7,50,91      # just these card numbers
+```
+It builds each row from the card data: an ≤80-char title, a description, the item aspects (Sport, Player, Season, Set, Manufacturer, Card #, Parallel/Variety, Team, Features, Autographed), price, and condition — `ConditionID 4000` (Ungraded) or `2750` (Graded), with the grader/grade split out for the 12 slabbed cards.
+
+Before uploading, fill the CONFIG block at the top of the script (or finish these in Seller Hub on review):
+- **Location ZIP** + **shipping / return / payment** business-policy names — required to publish.
+- **Photos**: the repo images are local/private, so `PicURL` is blank by default; add photos per row in Seller Hub, or set `IMAGE_BASE_URL` if you host them publicly.
+- **Graded cards**: add each **Certification Number** in Seller Hub (not stored here).
+- **Ungraded condition**: pick a Card Condition per card, or set `DEFAULT_UNGRADED_CONDITION`.
+
+Then in Seller Hub: **Reports → Upload** (or the bulk listing tool), pick the file, and review. eBay enforces the required aspects for your account/category on review, so confirm anything it flags. The generated CSV is git-ignored (it's derived + has your pricing/policy specifics).
+
 ## GitHub Pages
 `.github/workflows/deploy.yml` rebuilds the site and deploys `docs/` on every push to `main`.
 Pages for a **private** repo needs a paid GitHub plan (Pro/Team); on the free plan, either keep it local (`docs/index.html`) or make the repo public — but note the pages embed personal card photos.
