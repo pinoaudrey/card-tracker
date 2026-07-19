@@ -3001,7 +3001,8 @@
       "hi": 250,
       "k": 6,
       "tier": "exact"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 96,
@@ -3492,7 +3493,8 @@
       "k": 6,
       "tier": "broad",
       "note": "no parallel match — broad Walti median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 112,
@@ -3523,7 +3525,8 @@
       "k": 12,
       "tier": "broad",
       "note": "no parallel match — broad Miedema median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 113,
@@ -3554,7 +3557,8 @@
       "k": 1,
       "tier": "broad",
       "note": "no parallel match — broad Heath median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 114,
@@ -3585,7 +3589,8 @@
       "k": 3,
       "tier": "broad",
       "note": "no parallel match — broad Catley median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 115,
@@ -3616,7 +3621,8 @@
       "k": 2,
       "tier": "broad",
       "note": "no parallel match — broad Wubben-Moy median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 116,
@@ -3648,7 +3654,8 @@
       "hi": 39.99,
       "k": 2,
       "tier": "exact"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 117,
@@ -3679,7 +3686,8 @@
       "k": 1,
       "tier": "close",
       "note": "closest: /99 from 2024 (card 2021)"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 118,
@@ -3710,7 +3718,8 @@
       "k": 2,
       "tier": "broad",
       "note": "no parallel match — broad Beattie median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 119,
@@ -3734,7 +3743,8 @@
     ],
     "notes": "Rookie #55 Pink Cracked Ice /150. #55 Pink Cracked Ice /150 RC; estimated.",
     "confidence": "low",
-    "point130": null
+    "point130": null,
+    "for_sale": false
   },
   {
     "n": 120,
@@ -3765,7 +3775,8 @@
       "k": 3,
       "tier": "broad",
       "note": "no parallel match — broad Catley median"
-    }
+    },
+    "for_sale": false
   },
   {
     "n": 121,
@@ -3796,6 +3807,7 @@
       "k": 3,
       "tier": "broad",
       "note": "no parallel match — broad Maanum median"
-    }
+    },
+    "for_sale": false
   }
 ]

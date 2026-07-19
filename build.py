@@ -89,10 +89,12 @@ main{padding:20px;max-width:1400px;margin:0 auto}
 .card.issold{border-color:var(--accent2)}
 .thumb{position:relative;aspect-ratio:3/4;background:var(--panel2);display:block;overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:contain}
-.thumb .soldtag,.thumb .duptag{position:absolute;top:8px;font-size:10px;font-weight:800;padding:3px 8px;
+.thumb .soldtag,.thumb .duptag,.thumb .nfstag{position:absolute;top:8px;font-size:10px;font-weight:800;padding:3px 8px;
   border-radius:999px;letter-spacing:.5px}
 .thumb .soldtag{right:8px;background:var(--accent2);color:#06121a}
 .thumb .duptag{left:8px;background:var(--warn);color:#3a2e12}
+.thumb .nfstag{right:8px;background:var(--muted);color:#fff}
+.card.nfs{opacity:.72}
 .body{padding:11px 13px;display:flex;flex-direction:column;gap:7px}
 .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .player{font-size:15px;font-weight:800;margin:0;line-height:1.2}
@@ -212,7 +214,7 @@ def chips_html(c):
 client = []
 for c in cards:
     client.append({k: c.get(k) for k in ("n","player","team","year","set","card_no","parallel","serial",
-        "auto","relic","grade","market_value","last_sale","last_sale_date","confidence","front","back","notes","comps","point130")})
+        "auto","relic","grade","market_value","last_sale","last_sale_date","confidence","front","back","notes","comps","point130","for_sale")})
 CARDS_JSON = json.dumps(client)
 HIST_TOTALS = json.dumps([{"date": s["date"], "value": s.get("total")} for s in history])
 DUP_JSON = json.dumps(dupinfo)
@@ -271,8 +273,8 @@ function cardHTML(c){{
   const s=st(c.n),isSold=!!s.sold,d=DUP[c.n]||{{tier:0}};
   const chips=[c.auto?chip('AUTO','auto'):'',c.relic?chip('RELIC','relic'):'',
     (c.grade&&c.grade!=='Raw')?chip(c.grade,'grade'):'',c.serial?chip('#'+c.serial,''):''].join('');
-  return `<div class="card ${{isSold?'issold':''}}" data-n="${{c.n}}">
-    <a class="thumb" href="cards/${{c.n}}.html">${{isSold?'<span class="soldtag">SOLD</span>':''}}${{d.tier===1?`<span class="duptag">&#9888; DUP?</span>`:''}}
+  return `<div class="card ${{isSold?'issold':''}} ${{c.for_sale===false?'nfs':''}}" data-n="${{c.n}}">
+    <a class="thumb" href="cards/${{c.n}}.html">${{isSold?'<span class="soldtag">SOLD</span>':c.for_sale===false?'<span class="nfstag">NOT FOR SALE</span>':''}}${{d.tier===1?`<span class="duptag">&#9888; DUP?</span>`:''}}
       ${{c.front?`<img loading=lazy src="images/${{c.front}}.jpg" alt="">`:''}}</a>
     <div class="body">
       <div class="top"><div><p class="player"><a href="cards/${{c.n}}.html">${{c.player}}</a></p>

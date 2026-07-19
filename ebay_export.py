@@ -275,6 +275,8 @@ def main():
     if args.only:
         keep = {int(x) for x in args.only.split(",")}
         cards = [c for c in cards if c["n"] in keep]
+    not_for_sale = [c["n"] for c in cards if c.get("for_sale") is False]
+    cards = [c for c in cards if c.get("for_sale") is not False]
 
     os.makedirs(os.path.join(ROOT, "exports"), exist_ok=True)
     out = os.path.join(ROOT, "exports", "ebay_listings.csv")
@@ -293,6 +295,8 @@ def main():
                 graded.append(c["n"])
 
     print(f"wrote {out}  ({len(cards)} listings, price source: {PRICE_SOURCE})")
+    if not_for_sale:
+        print(f"  i excluded {len(not_for_sale)} not-for-sale: {not_for_sale}")
     if no_price:
         print(f"  ! no price ({len(no_price)}): {no_price} — set manually before listing")
     if graded:

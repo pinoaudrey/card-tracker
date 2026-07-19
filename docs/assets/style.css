@@ -34,10 +34,12 @@ main{padding:20px;max-width:1400px;margin:0 auto}
 .card.issold{border-color:var(--accent2)}
 .thumb{position:relative;aspect-ratio:3/4;background:var(--panel2);display:block;overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:contain}
-.thumb .soldtag,.thumb .duptag{position:absolute;top:8px;font-size:10px;font-weight:800;padding:3px 8px;
+.thumb .soldtag,.thumb .duptag,.thumb .nfstag{position:absolute;top:8px;font-size:10px;font-weight:800;padding:3px 8px;
   border-radius:999px;letter-spacing:.5px}
 .thumb .soldtag{right:8px;background:var(--accent2);color:#06121a}
 .thumb .duptag{left:8px;background:var(--warn);color:#3a2e12}
+.thumb .nfstag{right:8px;background:var(--muted);color:#fff}
+.card.nfs{opacity:.72}
 .body{padding:11px 13px;display:flex;flex-direction:column;gap:7px}
 .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .player{font-size:15px;font-weight:800;margin:0;line-height:1.2}
