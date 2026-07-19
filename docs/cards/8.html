@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 8, "player": "Ella Toone", "team": "England", "year": "2024-25", "set": "Panini Eternity Lionesses (England) \u2014 Base", "card_no": "BAS-21", "parallel": "Red", "serial": "07/10", "auto": false, "relic": false, "grade": "Raw", "market_value": 40, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8362", "back": "IMG_8364", "notes": "Base #BAS-21 Red /10; no direct Red /10 comp, estimated above Magenta /25 (~$30) given rarer print run.", "comps": ["Eclipse Magenta /25 \u2014 $34.94 (Jan 8, 2026)", "Green /50 \u2014 $14\u201321 (Dec 2025)", "Signed base \u2014 $27 (May 9, 2026)"], "point130": null};
-const SERIES=[{"date": "2026-07-18", "value": 40}];
+const SERIES=[{"date": "2026-07-18", "value": 40}, {"date": "2026-07-19", "value": 40}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

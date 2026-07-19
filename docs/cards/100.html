@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 100, "player": "Carli Lloyd", "team": "USWNT", "year": "2022-23", "set": "Panini Obsidian \u2014 Aurora Autographs", "card_no": "AA-CL", "parallel": "Aurora", "serial": "154/172", "auto": true, "relic": false, "grade": "SGC 9", "market_value": 25, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8557", "back": "IMG_8558", "notes": "Graded SGC 9 / Auto 10. Aurora auto /172. Graded SGC 9 / Auto 10; raw Aurora auto /172 $9\u201320, SGC 9 estimated ~$25.", "comps": ["Aurora Auto /172 (raw) \u2014 $9\u201320 (Jun\u2013Jul 2026)", "Aurora Orange /25 Auto \u2014 $19.00 (Jun 28, 2026)"], "point130": {"v": 17, "lo": 9, "hi": 20, "k": 3, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 25}];
+const SERIES=[{"date": "2026-07-18", "value": 25}, {"date": "2026-07-19", "value": 25}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

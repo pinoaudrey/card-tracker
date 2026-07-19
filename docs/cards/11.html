@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 11, "player": "Beth Mead", "team": "Arsenal", "year": "2023-24", "set": "Topps Arsenal \u2014 Arsenal Forever Autographs", "card_no": "", "parallel": "Green", "serial": "89/99", "auto": true, "relic": false, "grade": "Raw", "market_value": 35, "last_sale": 41.05, "last_sale_date": "2025-10-30", "confidence": "medium", "front": "IMG_8370", "back": "IMG_8371", "notes": "On-card auto, green /99. Base autos recently $10\u201330; the /99 parallel is scarcer.", "comps": ["Auto #/99 \u2014 $41.05 (Oct 30, 2025)", "Base auto AW-BM \u2014 $10\u201330 (2026)", "Gold /49 \u2014 $21.50 (Mar 12, 2026)", "Orange /25 \u2014 $21.57 (Nov 11, 2025)"], "point130": {"v": 2.25, "lo": 2.25, "hi": 2.25, "k": 1, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 35}];
+const SERIES=[{"date": "2026-07-18", "value": 35}, {"date": "2026-07-19", "value": 35}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

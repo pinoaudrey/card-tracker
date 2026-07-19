@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Frida Maanum</h1><div class="team">Arsenal</div></div>
-  <div style="text-align:right"><div class="dbig">$3</div>
+  <div style="text-align:right"><div class="dbig">$0.99</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#31/75</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8510.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8511.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Purple Refractor</span>
       <span class="k">Serial</span><span>31/75</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$3 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$0.99 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$0.99 &middot; 1 sold &middot; $0.99&ndash;$0.99 <span style="color:var(--muted)">&#126; no parallel match — broad Maanum median</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Maanum base numbered parallels — ~$2–5</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated. [Value reconciled to Notion comp avg (was $3; 1 Card Ladder comps $0.99–$0.99).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 77, "player": "Frida Maanum", "team": "Arsenal", "year": "2025-26", "set": "Topps Chrome UWCL", "card_no": "", "parallel": "Purple Refractor", "serial": "31/75", "auto": false, "relic": false, "grade": "Raw", "market_value": 3, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8510", "back": "IMG_8511", "notes": "Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated.", "comps": ["Maanum base numbered parallels \u2014 ~$2\u20135"], "point130": {"v": 0.99, "lo": 0.99, "hi": 0.99, "k": 1, "tier": "broad", "note": "no parallel match \u2014 broad Maanum median"}};
-const SERIES=[{"date": "2026-07-18", "value": 3}];
+const C={"n": 77, "player": "Frida Maanum", "team": "Arsenal", "year": "2025-26", "set": "Topps Chrome UWCL", "card_no": "", "parallel": "Purple Refractor", "serial": "31/75", "auto": false, "relic": false, "grade": "Raw", "market_value": 0.99, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8510", "back": "IMG_8511", "notes": "Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated. [Value reconciled to Notion comp avg (was $3; 1 Card Ladder comps $0.99\u2013$0.99).]", "comps": ["Maanum base numbered parallels \u2014 ~$2\u20135"], "point130": {"v": 0.99, "lo": 0.99, "hi": 0.99, "k": 1, "tier": "broad", "note": "no parallel match \u2014 broad Maanum median"}};
+const SERIES=[{"date": "2026-07-18", "value": 3}, {"date": "2026-07-19", "value": 0.99}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

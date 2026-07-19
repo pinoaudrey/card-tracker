@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Aitana Bonmatí</h1><div class="team">Spain</div></div>
-  <div style="text-align:right"><div class="dbig">$50</div>
+  <div style="text-align:right"><div class="dbig">$39.99</div>
   <div class="team">market est. &middot; medium confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#22/50</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8421.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8422.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Gold</span>
       <span class="k">Serial</span><span>22/50</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$50 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$39.99 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$61 &middot; 5 sold &middot; $39.99&ndash;$299.99 <span style="color:var(--muted)">(exact parallel)</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Orange Foil /25 — $99.44 (Apr 10, 2026)</li><li>Base #026 PSA 10 — $28–36 (2026)</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">&#x27;Late Winner vs Germany&#x27; EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">&#x27;Late Winner vs Germany&#x27; EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name. [Value reconciled to Notion comp avg (was $50; 1 Card Ladder comps $39.99–$39.99).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 35, "player": "Aitana Bonmat\u00ed", "team": "Spain", "year": "2025", "set": "Topps Now UEFA Women's EURO 2025 #026", "card_no": "026", "parallel": "Gold", "serial": "22/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 50, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8421", "back": "IMG_8422", "notes": "'Late Winner vs Germany' EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name.", "comps": ["Orange Foil /25 \u2014 $99.44 (Apr 10, 2026)", "Base #026 PSA 10 \u2014 $28\u201336 (2026)"], "point130": {"v": 61, "lo": 39.99, "hi": 299.99, "k": 5, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 50}];
+const C={"n": 35, "player": "Aitana Bonmat\u00ed", "team": "Spain", "year": "2025", "set": "Topps Now UEFA Women's EURO 2025 #026", "card_no": "026", "parallel": "Gold", "serial": "22/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 39.99, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8421", "back": "IMG_8422", "notes": "'Late Winner vs Germany' EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name. [Value reconciled to Notion comp avg (was $50; 1 Card Ladder comps $39.99\u2013$39.99).]", "comps": ["Orange Foil /25 \u2014 $99.44 (Apr 10, 2026)", "Base #026 PSA 10 \u2014 $28\u201336 (2026)"], "point130": {"v": 61, "lo": 39.99, "hi": 299.99, "k": 5, "tier": "exact"}};
+const SERIES=[{"date": "2026-07-18", "value": 50}, {"date": "2026-07-19", "value": 39.99}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 107, "player": "Catarina Macario", "team": "Chelsea FC", "year": "2023-24", "set": "Topps Chrome Sapphire UWCL \u2014 Autographs", "card_no": "A-CM", "parallel": "Sapphire", "serial": "11/25", "auto": true, "relic": false, "grade": "Raw", "market_value": 20, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8572", "back": "IMG_8573", "notes": "On-card Sapphire auto /25. 2023-24 Sapphire #A-CM auto /25; no direct comp \u2014 comparable /25 autos $17\u201336.", "comps": ["2025-26 CA-CM Orange Wave /25 Auto \u2014 $17.30 (Jul 15, 2026)", "Chrome Premium Relic Orange Auto /25 \u2014 $36.00 (Jul 16, 2026)"], "point130": {"v": 16.01, "lo": 7.75, "hi": 35, "k": 4, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 20}];
+const SERIES=[{"date": "2026-07-18", "value": 20}, {"date": "2026-07-19", "value": 20}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

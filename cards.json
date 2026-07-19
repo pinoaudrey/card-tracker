@@ -146,7 +146,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "AS Roma",
-    "market_value": 8,
+    "market_value": 5.0,
     "last_sale": 5,
     "last_sale_date": "2026-07-07",
     "comps": [
@@ -156,7 +156,7 @@
       "$9.99 (Mar 15, 2026)",
       "$9.99 (Feb 15, 2026)"
     ],
-    "notes": "Common SSP; recent range $5–$10.",
+    "notes": "Common SSP; recent range $5–$10. [Value reconciled to Notion comp avg (was $8; 1 Card Ladder comps $5.0–$5.0).]",
     "confidence": "high",
     "point130": {
       "v": 7,
@@ -395,7 +395,7 @@
     "relic": false,
     "grade": "SGC 9",
     "team": "Arsenal",
-    "market_value": 100,
+    "market_value": 51.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
@@ -403,7 +403,7 @@
       "Green /99 — $16–36 (2025)",
       "Base refractor — $1–8"
     ],
-    "notes": "Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate.",
+    "notes": "Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate. [Value reconciled to Notion comp avg (was $100; 1 Card Ladder comps $51.0–$51.0).]",
     "confidence": "low",
     "point130": {
       "v": 9.99,
@@ -428,7 +428,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "Manchester City",
-    "market_value": 42,
+    "market_value": 31.26,
     "last_sale": 35,
     "last_sale_date": "2026-03-01",
     "comps": [
@@ -436,7 +436,7 @@
       "Orange Wave Auto /25 — $55.00 (Jan 11, 2026)",
       "Sapphire Orange Auto /25 — $30–34 (Apr–May 2026)"
     ],
-    "notes": "On-card auto, orange cracked ice /25.",
+    "notes": "On-card auto, orange cracked ice /25. [Value reconciled to Notion comp avg (was $42; 3 Card Ladder comps $30.0–$33.79).]",
     "confidence": "medium",
     "point130": {
       "v": 5,
@@ -494,7 +494,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "OL Lyonnes",
-    "market_value": 25,
+    "market_value": 13.75,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
@@ -502,7 +502,7 @@
       "Red /5 SSP auto — $41.00 (Jul 6, 2026)",
       "Auto Relic /50 — $23.00 (Jul 14, 2026)"
     ],
-    "notes": "On-card auto, orange wave /25 (serial approx). No direct 2024-25 Orange Wave /25 comp; base autos $5–12, estimated up for the rarer /25.",
+    "notes": "On-card auto, orange wave /25 (serial approx). No direct 2024-25 Orange Wave /25 comp; base autos $5–12, estimated up for the rarer /25. [Value reconciled to Notion comp avg (was $25; 2 Card Ladder comps $10.0–$17.5).]",
     "confidence": "low",
     "point130": {
       "v": 17.5,
@@ -526,7 +526,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "Juventus",
-    "market_value": 10,
+    "market_value": 5.42,
     "last_sale": 11.5,
     "last_sale_date": "2026-06-15",
     "comps": [
@@ -534,7 +534,7 @@
       "Red Wave /5 — $71.68 (Jun 14, 2026)",
       "Purple /75 — $10.00 (Jun 20, 2026)"
     ],
-    "notes": "Corrected to Rose Gold Wave auto /50 (not Orange). RC auto; comparable /50 autos ~$8–12.",
+    "notes": "Corrected to Rose Gold Wave auto /50 (not Orange). RC auto; comparable /50 autos ~$8–12. [Value reconciled to Notion comp avg (was $10; 4 Card Ladder comps $4.25–$6.51).]",
     "confidence": "low",
     "point130": {
       "v": 5.9,
@@ -656,7 +656,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "Real Madrid",
-    "market_value": 22,
+    "market_value": 8.4,
     "last_sale": 20,
     "last_sale_date": "2026-05-22",
     "comps": [
@@ -664,7 +664,7 @@
       "Purple /75 — $21.50 (Jun 21, 2026)",
       "Black /10 — $70.00 (Jul 10, 2026)"
     ],
-    "notes": "On-card auto, green /99.",
+    "notes": "On-card auto, green /99. [Value reconciled to Notion comp avg (was $22; 4 Card Ladder comps $5.5–$14.0).]",
     "confidence": "high",
     "point130": {
       "v": 16.5,
@@ -972,13 +972,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "FC Barcelona",
-    "market_value": 20,
+    "market_value": 52.5,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Base Inside Look insert (unnumbered) — $1.00–3.88 (Jun–Jul 2026)"
     ],
-    "notes": "Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 — base Inside Look insert sells $1–4. Parallel worth verifying.",
+    "notes": "Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 — base Inside Look insert sells $1–4. Parallel worth verifying. [Value reconciled to Notion comp avg (was $20; 3 Card Ladder comps $40.0–$67.5).]",
     "confidence": "low",
     "point130": null
   },
@@ -1027,7 +1027,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 30,
+    "market_value": 64.8,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
@@ -1035,7 +1035,7 @@
       "#22 Gold /50 — $34.95 (Jun 2, 2026)",
       "#21 Orange /25 PSA 10 — $216.89 (Apr 28, 2026)"
     ],
-    "notes": "'Scores Twice vs Real Madrid' UWCL QF. Gold /50. No direct #021 Gold /50 comp; estimated from sibling Gold /50s ($27–35).",
+    "notes": "'Scores Twice vs Real Madrid' UWCL QF. Gold /50. No direct #021 Gold /50 comp; estimated from sibling Gold /50s ($27–35). [Value reconciled to Notion comp avg (was $30; 3 Card Ladder comps $58.28–$75.0).]",
     "confidence": "medium",
     "point130": {
       "v": 75,
@@ -1059,14 +1059,14 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 55,
+    "market_value": 161.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "#21 Orange /25 PSA 10 — $216.89 (Apr 28, 2026)",
       "#22 Orange /25 jersey — $100.00 (Jun 5, 2026)"
     ],
-    "notes": "Same #021 as prior, rarer /25 parallel. Parallel corrected Red→Orange. Raw Orange /25; PSA 10 sold $216.89 (graded premium), raw estimated ~$55.",
+    "notes": "Same #021 as prior, rarer /25 parallel. Parallel corrected Red→Orange. Raw Orange /25; PSA 10 sold $216.89 (graded premium), raw estimated ~$55. [Value reconciled to Notion comp avg (was $55; 2 Card Ladder comps $122.06–$200.0).]",
     "confidence": "low",
     "point130": {
       "v": 189.35,
@@ -1090,14 +1090,14 @@
     "relic": false,
     "grade": "Raw",
     "team": "Spain",
-    "market_value": 50,
+    "market_value": 39.99,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Orange Foil /25 — $99.44 (Apr 10, 2026)",
       "Base #026 PSA 10 — $28–36 (2026)"
     ],
-    "notes": "'Late Winner vs Germany' EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name.",
+    "notes": "'Late Winner vs Germany' EURO SF. Gold /50. Gold /50; no direct comp, estimated between base (~$35 graded) and Orange /25 ($99). Marquee name. [Value reconciled to Notion comp avg (was $50; 1 Card Ladder comps $39.99–$39.99).]",
     "confidence": "medium",
     "point130": {
       "v": 61,
@@ -1214,14 +1214,14 @@
     "relic": false,
     "grade": "Raw",
     "team": "OL Lyonnes",
-    "market_value": 18,
+    "market_value": 40.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Base QF-7 — $1.59 (May 21, 2026)",
       "Gold /50 — $5.00 (May 5, 2026)"
     ],
-    "notes": "Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5).",
+    "notes": "Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5). [Value reconciled to Notion comp avg (was $18; 1 Card Ladder comps $40.0–$40.0).]",
     "confidence": "low",
     "point130": {
       "v": 5,
@@ -2175,7 +2175,7 @@
     "relic": false,
     "grade": "Raw",
     "team": "Manchester City",
-    "market_value": 3,
+    "market_value": 1.5,
     "last_sale": 1.5,
     "last_sale_date": "2026-04-15",
     "comps": [
@@ -2183,7 +2183,7 @@
       "Golazo Blue /150 — $4.00 (Jul 15, 2026)",
       "Golazo Rose Gold /50 — $5.00 (Jun 17, 2026)"
     ],
-    "notes": "Golazo insert, Purple /75.",
+    "notes": "Golazo insert, Purple /75. [Value reconciled to Notion comp avg (was $3; 1 Card Ladder comps $1.0–$1.5).]",
     "confidence": "medium",
     "point130": {
       "v": 1.5,
@@ -2425,13 +2425,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 3,
+    "market_value": 0.99,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Maanum base numbered parallels — ~$2–5"
     ],
-    "notes": "Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated.",
+    "notes": "Base Purple /75 (blurry back). Purple /75 (2025-26); no direct comp, estimated. [Value reconciled to Notion comp avg (was $3; 1 Card Ladder comps $0.99–$0.99).]",
     "confidence": "low",
     "point130": {
       "v": 0.99,
@@ -2456,13 +2456,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 8,
+    "market_value": 4.75,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Queens of Football inserts — ~$5–10"
     ],
-    "notes": "QoF insert Gold Frame /50 (last of run). QoF Gold Frame /50 (50/50, last of run); estimated.",
+    "notes": "QoF insert Gold Frame /50 (last of run). QoF Gold Frame /50 (50/50, last of run); estimated. [Value reconciled to reconciled to $4.75: Notion $3.0 (hi $5.0) + 130pt $4.75 (2 sales) both far below gallery $8.]",
     "confidence": "low",
     "point130": {
       "v": 4.75,
@@ -3385,13 +3385,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "FC Rosengård",
-    "market_value": 6,
+    "market_value": 12.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Comparable Chrome UWCL rookie autos — ~$5–10"
     ],
-    "notes": "Rookie on-card auto. Rosengård rookie auto; no direct comp, estimated.",
+    "notes": "Rookie on-card auto. Rosengård rookie auto; no direct comp, estimated. [Value reconciled to Notion comp avg (was $6; 3 Card Ladder comps $8.27–$18.0).]",
     "confidence": "low",
     "point130": {
       "v": 9.99,
@@ -3416,13 +3416,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "Real Madrid",
-    "market_value": 15,
+    "market_value": 35.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Caicedo QoF & numbered inserts — ~$10–20"
     ],
-    "notes": "Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15.",
+    "notes": "Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15. [Value reconciled to Notion comp avg (was $15; 1 Card Ladder comps $35.0–$35.0).]",
     "confidence": "low",
     "point130": {
       "v": 30,
@@ -3477,13 +3477,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 15,
+    "market_value": 30.0,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "2021-22 gold /50 rookie parallels comparable — ~$15–25"
     ],
-    "notes": "Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated.",
+    "notes": "Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated. [Value reconciled to Notion comp avg (was $15; 2 Card Ladder comps $22.0–$65.0).]",
     "confidence": "low",
     "point130": {
       "v": 5.75,
@@ -3508,13 +3508,13 @@
     "relic": false,
     "grade": "Raw",
     "team": "Arsenal",
-    "market_value": 65,
+    "market_value": 21.17,
     "last_sale": null,
     "last_sale_date": null,
     "comps": [
       "Orange Wave /25 RC — $135–344 (2022–2023, old comps)"
     ],
-    "notes": "Rookie #10 Orange /75. #10 Orange Refractor RC, read as /75. Only old (2022-23) /25 Orange Wave comps ($135–344) exist; market has since cooled and /75 is a larger run. Estimated — worth verifying the print run.",
+    "notes": "Rookie #10 Orange /75. #10 Orange Refractor RC, read as /75. Only old (2022-23) /25 Orange Wave comps ($135–344) exist; market has since cooled and /75 is a larger run. Estimated — worth verifying the print run. [Value reconciled to reconciled to $21.17: Notion $12.0 (hi $20.0) + 130pt $21.17 (12 sales) both far below gallery $65.]",
     "confidence": "low",
     "point130": {
       "v": 21.17,

@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 18, "player": "Ada Hegerberg", "team": "OL Lyonnes", "year": "2024-25", "set": "Topps Chrome UWCL \u2014 Autographs", "card_no": "AV-AH", "parallel": "Purple Refractor", "serial": "51/75", "auto": true, "relic": false, "grade": "Raw", "market_value": 12, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8387", "back": "IMG_8388", "notes": "On-card auto, purple /75. 2024-25 Purple /75 (#AV-AH); no direct /75 comp \u2014 Hegerberg numbered autos $5\u201320.", "comps": ["Orange /25 \u2014 $12.05 (Jul 15, 2026)", "Gold /50 \u2014 $5.51\u201317 (Jul 2026)", "Green /99 \u2014 $7.59 (Jul 16, 2026)"], "point130": {"v": 13.59, "lo": 8.5, "hi": 27.5, "k": 4, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 12}];
+const SERIES=[{"date": "2026-07-18", "value": 12}, {"date": "2026-07-19", "value": 12}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

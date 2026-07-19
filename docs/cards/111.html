@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Lia Wälti</h1><div class="team">Arsenal</div></div>
-  <div style="text-align:right"><div class="dbig">$15</div>
+  <div style="text-align:right"><div class="dbig">$30</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#27/50</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8580.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8581.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Gold Refractor</span>
       <span class="k">Serial</span><span>27/50</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$15 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$30 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$5.75 &middot; 6 sold &middot; $1.75&ndash;$45 <span style="color:var(--muted)">&#126; no parallel match — broad Walti median</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>2021-22 gold /50 rookie parallels comparable — ~$15–25</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated. [Value reconciled to Notion comp avg (was $15; 2 Card Ladder comps $22.0–$65.0).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 111, "player": "Lia W\u00e4lti", "team": "Arsenal", "year": "2021-22", "set": "Topps Chrome Women's UCL", "card_no": "98", "parallel": "Gold Refractor", "serial": "27/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 15, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8580", "back": "IMG_8581", "notes": "Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated.", "comps": ["2021-22 gold /50 rookie parallels comparable \u2014 ~$15\u201325"], "point130": {"v": 5.75, "lo": 1.75, "hi": 45, "k": 6, "tier": "broad", "note": "no parallel match \u2014 broad Walti median"}};
-const SERIES=[{"date": "2026-07-18", "value": 15}];
+const C={"n": 111, "player": "Lia W\u00e4lti", "team": "Arsenal", "year": "2021-22", "set": "Topps Chrome Women's UCL", "card_no": "98", "parallel": "Gold Refractor", "serial": "27/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 30.0, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8580", "back": "IMG_8581", "notes": "Rookie #98 Gold /50. 2021-22 #98 Gold Refractor /50 RC; no direct comp, estimated. [Value reconciled to Notion comp avg (was $15; 2 Card Ladder comps $22.0\u2013$65.0).]", "comps": ["2021-22 gold /50 rookie parallels comparable \u2014 ~$15\u201325"], "point130": {"v": 5.75, "lo": 1.75, "hi": 45, "k": 6, "tier": "broad", "note": "no parallel match \u2014 broad Walti median"}};
+const SERIES=[{"date": "2026-07-18", "value": 15}, {"date": "2026-07-19", "value": 30.0}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

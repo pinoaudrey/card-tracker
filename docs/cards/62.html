@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 62, "player": "Georgia Stanway", "team": "FC Bayern M\u00fcnchen", "year": "2024-25", "set": "Topps Chrome UWCL", "card_no": "87", "parallel": "Red Cracked Ice /50", "serial": "", "auto": false, "relic": false, "grade": "Raw", "market_value": 5, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8476", "back": "IMG_8477", "notes": "Base #87 Red Cracked Ice /50. Base #87 Red Cracked Ice /50; no direct comp \u2014 estimated.", "comps": ["Comparable /50 base parallels \u2014 ~$5", "Sapphire Orange /25 (Stanway) \u2014 $18\u201320 (Jun 2026)"], "point130": {"v": 5.75, "lo": 0.99, "hi": 18.5, "k": 12, "tier": "broad", "note": "no parallel match \u2014 broad Stanway median"}};
-const SERIES=[{"date": "2026-07-18", "value": 5}];
+const SERIES=[{"date": "2026-07-18", "value": 5}, {"date": "2026-07-19", "value": 5}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

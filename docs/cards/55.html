@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 55, "player": "Athenea del Castillo", "team": "Real Madrid", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-19", "parallel": "Purple", "serial": "64/75", "auto": false, "relic": false, "grade": "Raw", "market_value": 4, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8461", "back": "IMG_8463", "notes": "Queens of Football insert, purple /75. Purple /75; between base ($2) and Orange /25 ($5.50).", "comps": ["Orange /25 \u2014 $5.50 (Jul 5, 2026)", "Gold /50 \u2014 $30.00 (Jun 28, 2026)", "Base QF-19 \u2014 $2.00 (Jul 18, 2026)"], "point130": {"v": 18.5, "lo": 7, "hi": 30, "k": 9, "tier": "broad", "note": "no parallel match \u2014 broad Castillo median"}};
-const SERIES=[{"date": "2026-07-18", "value": 4}];
+const SERIES=[{"date": "2026-07-18", "value": 4}, {"date": "2026-07-19", "value": 4}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

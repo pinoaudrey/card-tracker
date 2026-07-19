@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 117, "player": "Kim Little", "team": "Arsenal", "year": "2021-22", "set": "Topps Chrome Women's UCL", "card_no": "2", "parallel": "Green Refractor", "serial": "56/99", "auto": false, "relic": false, "grade": "Raw", "market_value": 10, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8592", "back": "IMG_8593", "notes": "Rookie #2 Green /99. #2 Green /99 RC; Kim Little is a respected Arsenal name \u2014 estimated.", "comps": ["2021-22 Green Neon /99 comparable \u2014 raw ~$8\u201312"], "point130": {"v": 2.99, "lo": 2.99, "hi": 2.99, "k": 1, "tier": "close", "note": "closest: /99 from 2024 (card 2021)"}};
-const SERIES=[{"date": "2026-07-18", "value": 10}];
+const SERIES=[{"date": "2026-07-18", "value": 10}, {"date": "2026-07-19", "value": 10}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

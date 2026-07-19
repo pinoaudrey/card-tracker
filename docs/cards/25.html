@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 25, "player": "Lily Murphy", "team": "Manchester City", "year": "2024-25", "set": "Topps Chrome UWCL \u2014 Autographs (RC)", "card_no": "AV-MU", "parallel": "Blue Refractor", "serial": "050/150", "auto": true, "relic": false, "grade": "Raw", "market_value": 10, "last_sale": 10.51, "last_sale_date": "2026-05-31", "confidence": "high", "front": "IMG_8401", "back": "IMG_8402", "notes": "Rookie on-card auto, blue /150.", "comps": ["Blue /150 RC \u2014 $10.51 (May 31, 2026)", "Orange Wave /25 \u2014 $35.00 (Jun 21, 2026)", "Gold Wave /50 \u2014 $14.00 (Jun 30, 2026)"], "point130": {"v": 9.24, "lo": 5.5, "hi": 11.61, "k": 7, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 10}];
+const SERIES=[{"date": "2026-07-18", "value": 10}, {"date": "2026-07-19", "value": 10}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

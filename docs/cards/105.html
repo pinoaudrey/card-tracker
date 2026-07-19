@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 105, "player": "Sophia Smith", "team": "USWNT", "year": "2024", "set": "Topps Chrome US Olympic & Paralympic Team Hopefuls \u2014 Autograph", "card_no": "AU-SSM", "parallel": "", "serial": "189/238", "auto": true, "relic": false, "grade": "Raw", "market_value": 35, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8568", "back": "IMG_8569", "notes": "Serial denominator corrected to /238 (189/238). Base auto; comparable base /238 sold $35.", "comps": ["Base Refractor Auto /238 \u2014 $35.00 (Apr 12, 2026)", "Green /99 Auto \u2014 $27\u201345 (2026)"], "point130": {"v": 47.82, "lo": 0.99, "hi": 200, "k": 28, "tier": "broad", "note": "no parallel match \u2014 broad Smith median"}};
-const SERIES=[{"date": "2026-07-18", "value": 35}];
+const SERIES=[{"date": "2026-07-18", "value": 35}, {"date": "2026-07-19", "value": 35}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

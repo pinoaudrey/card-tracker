@@ -6,8 +6,9 @@ Sports Trading Card Singles (category 261328). Review it in Seller Hub
 (Reports > Upload, or the bulk listing tool) before anything goes live —
 nothing here touches eBay directly.
 
-    python ebay_export.py
-    python ebay_export.py --price point130     # price off 130pt instead of Card Ladder
+    python ebay_export.py                       # default: higher end (max of the 3 sources)
+    python ebay_export.py --price market_value  # Card Ladder point estimate only
+    python ebay_export.py --price point130      # 130pt median only
     python ebay_export.py --only 7,50,91        # just these card numbers
 
 Fill in the CONFIG block below first (shipping/return/payment policy names,
@@ -18,9 +19,18 @@ import argparse, csv, json, os, re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
+# Notion "Values (Card Ladder)" recent-avg/low/high per card, keyed by n.
+# Used by PRICE_SOURCE="high" (list at the top of the value range). Optional.
+try:
+    NOTION = {int(k): v for k, v in json.load(open(os.path.join(ROOT, "notion_values.json"))).items()}
+except FileNotFoundError:
+    NOTION = {}
+
 # ------------------------------------------------------------------ CONFIG ---
 CATEGORY_ID = "261328"          # Sports Trading Card Singles (soccer = Sport aspect)
-PRICE_SOURCE = "market_value"   # "market_value" (Card Ladder) | "point130" | "max"
+# "high" = the higher end: max(Card Ladder, 130pt, Notion High). Others:
+# "market_value" (Card Ladder) | "point130" | "max" (of Card Ladder + 130pt).
+PRICE_SOURCE = "high"
 MARKUP = 1.0                    # multiply the estimate (e.g. 1.10 for +10%)
 MIN_PRICE = 0.99                # eBay floor
 QUANTITY = 1
@@ -59,6 +69,10 @@ def pick_price(c):
     p130 = (c.get("point130") or {}).get("v")
     if PRICE_SOURCE == "point130":
         return money(p130 if p130 is not None else mv)
+    if PRICE_SOURCE == "high":  # the higher end: top of every value signal
+        nhi = (NOTION.get(c["n"]) or {}).get("hi")
+        vals = [x for x in (mv, p130, nhi) if x is not None]
+        return money(max(vals)) if vals else None
     if PRICE_SOURCE == "max":
         vals = [x for x in (mv, p130) if x is not None]
         return money(max(vals)) if vals else None
@@ -250,7 +264,7 @@ def row_for(c):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--price", choices=("market_value", "point130", "max"))
+    ap.add_argument("--price", choices=("high", "market_value", "point130", "max"))
     ap.add_argument("--only", help="comma-separated card numbers")
     args = ap.parse_args()
     global PRICE_SOURCE

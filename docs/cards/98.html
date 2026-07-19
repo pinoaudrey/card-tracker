@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 98, "player": "Caroline Graham Hansen", "team": "Norway", "year": "2023", "set": "Panini Donruss WWC \u2014 Intergalactic", "card_no": "14", "parallel": "Intergalactic", "serial": "", "auto": false, "relic": false, "grade": "SGC 10", "market_value": 30, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8553", "back": "IMG_8554", "notes": "Graded SGC 10. Intergalactic insert. Graded SGC 10; raw Intergalactic $3\u201318, SGC 10 estimated with grade premium.", "comps": ["Intergalactic #14 SSP (raw) \u2014 $3.25\u201317.99 (2026)"], "point130": {"v": 5.62, "lo": 3.25, "hi": 7.99, "k": 2, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 30}];
+const SERIES=[{"date": "2026-07-18", "value": 30}, {"date": "2026-07-19", "value": 30}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 22, "player": "Lena Oberdorf", "team": "FC Bayern M\u00fcnchen", "year": "2024-25", "set": "Topps Chrome UWCL \u2014 Autographs", "card_no": "AV-LO", "parallel": "Green", "serial": "25/99", "auto": true, "relic": false, "grade": "Raw", "market_value": 11, "last_sale": 8.05, "last_sale_date": "2026-07-09", "confidence": "high", "front": "IMG_8395", "back": "IMG_8396", "notes": "On-card auto, green /99.", "comps": ["Green /99 \u2014 $8.05 (Jul 9, 2026)", "Green /99 \u2014 $12.50 (May 5, 2026)", "Green /99 \u2014 $20.00 (Apr 2, 2026)"], "point130": {"v": 12.5, "lo": 8.05, "hi": 24.99, "k": 9, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 11}];
+const SERIES=[{"date": "2026-07-18", "value": 11}, {"date": "2026-07-19", "value": 11}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

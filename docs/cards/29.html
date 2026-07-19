@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 29, "player": "Fridolina Rolf\u00f6", "team": "FC Barcelona", "year": "2023-24", "set": "Topps UWCL \u2014 Compa\u00f1eras Autographs", "card_no": "", "parallel": "Compa\u00f1eras", "serial": "13/25", "auto": true, "relic": false, "grade": "Raw", "market_value": 35, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8409", "back": "IMG_8410", "notes": "On-card auto, marble insert /25. Dual-auto insert /25; thin/old comps, estimated.", "comps": ["Compa\u00f1eras Auto /49 \u2014 $20.00 (Mar 14, 2025)", "Compa\u00f1eras dual auto /5 \u2014 $62.93 (Jan 27, 2025)"], "point130": {"v": 11.5, "lo": 7.01, "hi": 31, "k": 19, "tier": "broad", "note": "no parallel match \u2014 broad Rolfo median"}};
-const SERIES=[{"date": "2026-07-18", "value": 35}];
+const SERIES=[{"date": "2026-07-18", "value": 35}, {"date": "2026-07-19", "value": 35}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

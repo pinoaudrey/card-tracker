@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Alexia Putellas</h1><div class="team">FC Barcelona</div></div>
-  <div style="text-align:right"><div class="dbig">$20</div>
+  <div style="text-align:right"><div class="dbig">$52.50</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#18/50</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8413.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8414.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Refractor (gold-tone)</span>
       <span class="k">Serial</span><span>18/50</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$20 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$52.50 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>&mdash; no match</span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Base Inside Look insert (unnumbered) — $1.00–3.88 (Jun–Jul 2026)</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 — base Inside Look insert sells $1–4. Parallel worth verifying.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 — base Inside Look insert sells $1–4. Parallel worth verifying. [Value reconciled to Notion comp avg (was $20; 3 Card Ladder comps $40.0–$67.5).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 31, "player": "Alexia Putellas", "team": "FC Barcelona", "year": "2024-25", "set": "Topps Chrome UWCL \u2014 Inside Look", "card_no": "IL-1", "parallel": "Refractor (gold-tone)", "serial": "18/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 20, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8413", "back": "IMG_8414", "notes": "Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 \u2014 base Inside Look insert sells $1\u20134. Parallel worth verifying.", "comps": ["Base Inside Look insert (unnumbered) \u2014 $1.00\u20133.88 (Jun\u2013Jul 2026)"], "point130": null};
-const SERIES=[{"date": "2026-07-18", "value": 20}];
+const C={"n": 31, "player": "Alexia Putellas", "team": "FC Barcelona", "year": "2024-25", "set": "Topps Chrome UWCL \u2014 Inside Look", "card_no": "IL-1", "parallel": "Refractor (gold-tone)", "serial": "18/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 52.5, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8413", "back": "IMG_8414", "notes": "Inside Look insert, serial 18/50. Read as serial 18/50 (numbered parallel); if genuinely /50, ~$20 \u2014 base Inside Look insert sells $1\u20134. Parallel worth verifying. [Value reconciled to Notion comp avg (was $20; 3 Card Ladder comps $40.0\u2013$67.5).]", "comps": ["Base Inside Look insert (unnumbered) \u2014 $1.00\u20133.88 (Jun\u2013Jul 2026)"], "point130": null};
+const SERIES=[{"date": "2026-07-18", "value": 20}, {"date": "2026-07-19", "value": 52.5}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

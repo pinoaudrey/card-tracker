@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 88, "player": "Athenea del Castillo", "team": "Real Madrid", "year": "2024-25", "set": "Topps Chrome UWCL", "card_no": "24", "parallel": "Cracked Ice", "serial": "", "auto": false, "relic": false, "grade": "Raw", "market_value": 5, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8533", "back": "IMG_8534", "notes": "Base #24 Cracked Ice. #24 Cracked Ice (gold border). NOTE: likely overlaps with batch-3 Athenea #24 Gold Cracked Ice /75 (card 64) \u2014 verify not a duplicate.", "comps": ["Athenea base parallels \u2014 ~$2\u20135"], "point130": {"v": 8.5, "lo": 1, "hi": 75, "k": 17, "tier": "broad", "note": "no parallel match \u2014 broad Castillo median"}};
-const SERIES=[{"date": "2026-07-18", "value": 5}];
+const SERIES=[{"date": "2026-07-18", "value": 5}, {"date": "2026-07-19", "value": 5}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

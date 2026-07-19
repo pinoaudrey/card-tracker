@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 46, "player": "Guro Reiten", "team": "Chelsea FC", "year": "2025-26", "set": "Topps Chrome UWCL", "card_no": "24", "parallel": "Gold", "serial": "21/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 6, "last_sale": 6, "last_sale_date": "2026-07-05", "confidence": "high", "front": "IMG_8443", "back": "IMG_8444", "notes": "Base Gold /50.", "comps": ["Base Gold Wave #24 /50 \u2014 $6.00 (Jul 5, 2026)"], "point130": {"v": 20.51, "lo": 6, "hi": 30, "k": 6, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 6}];
+const SERIES=[{"date": "2026-07-18", "value": 6}, {"date": "2026-07-19", "value": 6}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

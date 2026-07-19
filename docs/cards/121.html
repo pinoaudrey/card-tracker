@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 121, "player": "Frida Maanum", "team": "Arsenal", "year": "2021-22", "set": "Topps Chrome Women's UCL", "card_no": "46", "parallel": "Pink Cracked Ice", "serial": "042/150", "auto": false, "relic": false, "grade": "Raw", "market_value": 5, "last_sale": 5, "last_sale_date": "2024-06-23", "confidence": "medium", "front": "IMG_8600", "back": "IMG_8601", "notes": "Rookie #46 Pink Cracked Ice /150.", "comps": ["#46 Pink Prism/Cracked Ice /150 RC \u2014 $5.00 (Jun 23, 2024)"], "point130": {"v": 2, "lo": 1.98, "hi": 2.95, "k": 3, "tier": "broad", "note": "no parallel match \u2014 broad Maanum median"}};
-const SERIES=[{"date": "2026-07-18", "value": 5}];
+const SERIES=[{"date": "2026-07-18", "value": 5}, {"date": "2026-07-19", "value": 5}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 7, "player": "Aitana Bonmat\u00ed", "team": "FC Barcelona / Spain", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Chrome Autograph", "card_no": "CA-AB", "parallel": "Gold Wave Refractor", "serial": "40/50", "auto": true, "relic": false, "grade": "Raw", "market_value": 120, "last_sale": 122.5, "last_sale_date": "2026-07-10", "confidence": "high", "front": "IMG_8360", "back": "IMG_8361", "notes": "Marquee card. Direct Gold Wave /50 comp $122.50.", "comps": ["Gold Wave Refractor Auto /50 \u2014 $122.50 (Jul 10, 2026)", "Purple Wave Auto /75 \u2014 $111.50 (Jul 17, 2026)", "Green Auto /99 \u2014 $61-80 (Jul 2026)", "Blue Auto /150 \u2014 $60-100 (Jul 2026)"], "point130": {"v": 122.5, "lo": 122.5, "hi": 122.5, "k": 1, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 120}];
+const SERIES=[{"date": "2026-07-18", "value": 120}, {"date": "2026-07-19", "value": 120}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

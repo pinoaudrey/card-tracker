@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Sofie Bredgaard</h1><div class="team">FC Rosengård</div></div>
-  <div style="text-align:right"><div class="dbig">$6</div>
+  <div style="text-align:right"><div class="dbig">$12</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip auto">AUTO</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8574.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8575.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>&mdash;</span>
       <span class="k">Serial</span><span>&mdash;</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$6 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$12 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$9.99 &middot; 18 sold &middot; $1.30&ndash;$33.33 <span style="color:var(--muted)">&#126; no parallel match — broad Bredgaard median</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Comparable Chrome UWCL rookie autos — ~$5–10</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Rookie on-card auto. Rosengård rookie auto; no direct comp, estimated.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Rookie on-card auto. Rosengård rookie auto; no direct comp, estimated. [Value reconciled to Notion comp avg (was $6; 3 Card Ladder comps $8.27–$18.0).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 108, "player": "Sofie Bredgaard", "team": "FC Roseng\u00e5rd", "year": "2023-24", "set": "Topps Chrome UWCL \u2014 Autographs (RC)", "card_no": "A-SB", "parallel": "", "serial": "", "auto": true, "relic": false, "grade": "Raw", "market_value": 6, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8574", "back": "IMG_8575", "notes": "Rookie on-card auto. Roseng\u00e5rd rookie auto; no direct comp, estimated.", "comps": ["Comparable Chrome UWCL rookie autos \u2014 ~$5\u201310"], "point130": {"v": 9.99, "lo": 1.3, "hi": 33.33, "k": 18, "tier": "broad", "note": "no parallel match \u2014 broad Bredgaard median"}};
-const SERIES=[{"date": "2026-07-18", "value": 6}];
+const C={"n": 108, "player": "Sofie Bredgaard", "team": "FC Roseng\u00e5rd", "year": "2023-24", "set": "Topps Chrome UWCL \u2014 Autographs (RC)", "card_no": "A-SB", "parallel": "", "serial": "", "auto": true, "relic": false, "grade": "Raw", "market_value": 12.0, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8574", "back": "IMG_8575", "notes": "Rookie on-card auto. Roseng\u00e5rd rookie auto; no direct comp, estimated. [Value reconciled to Notion comp avg (was $6; 3 Card Ladder comps $8.27\u2013$18.0).]", "comps": ["Comparable Chrome UWCL rookie autos \u2014 ~$5\u201310"], "point130": {"v": 9.99, "lo": 1.3, "hi": 33.33, "k": 18, "tier": "broad", "note": "no parallel match \u2014 broad Bredgaard median"}};
+const SERIES=[{"date": "2026-07-18", "value": 6}, {"date": "2026-07-19", "value": 12.0}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

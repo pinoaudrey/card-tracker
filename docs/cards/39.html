@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Selma Bacha</h1><div class="team">OL Lyonnes</div></div>
-  <div style="text-align:right"><div class="dbig">$18</div>
+  <div style="text-align:right"><div class="dbig">$40</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#/10</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8429.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8430.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Black /10</span>
       <span class="k">Serial</span><span>/10</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$18 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$40 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$5 &middot; 2 sold &middot; $1.99&ndash;$8 <span style="color:var(--warn)">&#8776; closest: same parallel /199 (card /10)</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Base QF-7 — $1.59 (May 21, 2026)</li><li>Gold /50 — $5.00 (May 5, 2026)</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5).</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5). [Value reconciled to Notion comp avg (was $18; 1 Card Ladder comps $40.0–$40.0).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 39, "player": "Selma Bacha", "team": "OL Lyonnes", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-7", "parallel": "Black /10", "serial": "/10", "auto": false, "relic": false, "grade": "Raw", "market_value": 18, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8429", "back": "IMG_8430", "notes": "Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5).", "comps": ["Base QF-7 \u2014 $1.59 (May 21, 2026)", "Gold /50 \u2014 $5.00 (May 5, 2026)"], "point130": {"v": 5, "lo": 1.99, "hi": 8, "k": 2, "tier": "close", "note": "closest: same parallel /199 (card /10)"}};
-const SERIES=[{"date": "2026-07-18", "value": 18}];
+const C={"n": 39, "player": "Selma Bacha", "team": "OL Lyonnes", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-7", "parallel": "Black /10", "serial": "/10", "auto": false, "relic": false, "grade": "Raw", "market_value": 40.0, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8429", "back": "IMG_8430", "notes": "Corrected to Black /10 (rarest QF-7 parallel). No direct /10 comp; estimated above Gold /50 ($5). [Value reconciled to Notion comp avg (was $18; 1 Card Ladder comps $40.0\u2013$40.0).]", "comps": ["Base QF-7 \u2014 $1.59 (May 21, 2026)", "Gold /50 \u2014 $5.00 (May 5, 2026)"], "point130": {"v": 5, "lo": 1.99, "hi": 8, "k": 2, "tier": "close", "note": "closest: same parallel /199 (card /10)"}};
+const SERIES=[{"date": "2026-07-18", "value": 18}, {"date": "2026-07-19", "value": 40.0}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

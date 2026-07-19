@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 36, "player": "Vivianne Miedema", "team": "Netherlands", "year": "2025", "set": "Topps Now UEFA Women's EURO 2025 #006", "card_no": "006", "parallel": "Orange", "serial": "12/25", "auto": false, "relic": false, "grade": "Raw", "market_value": 27, "last_sale": 27.5, "last_sale_date": "2025-08-15", "confidence": "medium", "front": "IMG_8423", "back": "IMG_8424", "notes": "'Hits Century of Goals'. /25 parallel. Parallel corrected Red\u2192Orange.", "comps": ["Orange /25 \u2014 $27.50 (Aug 15, 2025)", "Gold /50 \u2014 $18.50\u201319.99 (Oct 2025)"], "point130": {"v": 27.5, "lo": 27.5, "hi": 27.5, "k": 1, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 27}];
+const SERIES=[{"date": "2026-07-18", "value": 27}, {"date": "2026-07-19", "value": 27}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

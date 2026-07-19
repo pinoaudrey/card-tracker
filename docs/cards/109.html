@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 
 <div class="dhead"><div><h1>Linda Caicedo</h1><div class="team">Real Madrid</div></div>
-  <div style="text-align:right"><div class="dbig">$15</div>
+  <div style="text-align:right"><div class="dbig">$35</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip">#07/25</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8576.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8577.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Orange /25</span>
       <span class="k">Serial</span><span>07/25</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$15 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$35 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$30 &middot; 7 sold &middot; $21.11&ndash;$125 <span style="color:var(--muted)">&#126; no parallel match — broad Caicedo median</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Caicedo QoF &amp; numbered inserts — ~$10–20</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15. [Value reconciled to Notion comp avg (was $15; 1 Card Ladder comps $35.0–$35.0).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 109, "player": "Linda Caicedo", "team": "Real Madrid", "year": "2023-24", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-9", "parallel": "Orange /25", "serial": "07/25", "auto": false, "relic": false, "grade": "Raw", "market_value": 15, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8576", "back": "IMG_8577", "notes": "Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15.", "comps": ["Caicedo QoF & numbered inserts \u2014 ~$10\u201320"], "point130": {"v": 30, "lo": 21.11, "hi": 125, "k": 7, "tier": "broad", "note": "no parallel match \u2014 broad Caicedo median"}};
-const SERIES=[{"date": "2026-07-18", "value": 15}];
+const C={"n": 109, "player": "Linda Caicedo", "team": "Real Madrid", "year": "2023-24", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-9", "parallel": "Orange /25", "serial": "07/25", "auto": false, "relic": false, "grade": "Raw", "market_value": 35.0, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8576", "back": "IMG_8577", "notes": "Corrected to Orange /25 parallel. Caicedo QoF insert /25, estimated ~$15. [Value reconciled to Notion comp avg (was $15; 1 Card Ladder comps $35.0\u2013$35.0).]", "comps": ["Caicedo QoF & numbered inserts \u2014 ~$10\u201320"], "point130": {"v": 30, "lo": 21.11, "hi": 125, "k": 7, "tier": "broad", "note": "no parallel match \u2014 broad Caicedo median"}};
+const SERIES=[{"date": "2026-07-18", "value": 15}, {"date": "2026-07-19", "value": 35.0}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

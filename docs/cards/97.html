@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 97, "player": "Aitana Bonmat\u00ed", "team": "FC Barcelona", "year": "2023-24", "set": "Topps Chrome UWCL \u2014 Queens of Football Autographs", "card_no": "QA-AB", "parallel": "", "serial": "37/99", "auto": true, "relic": false, "grade": "TAG 10", "market_value": 150, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8551", "back": "IMG_8552", "notes": "Graded TAG 10. QoF on-card auto /99. Graded TAG 10; PSA 10 ~$205, raw ~$120\u2013160. TAG trades a bit under PSA.", "comps": ["QoF Auto /99 PSA 10 \u2014 $204.52 (Jan 19, 2026)", "QoF Auto /99 CGC 9.5 \u2014 $225.00 (Sep 2025)", "Raw QoF Auto /99 \u2014 $119\u2013160 (2025)"], "point130": null};
-const SERIES=[{"date": "2026-07-18", "value": 150}];
+const SERIES=[{"date": "2026-07-18", "value": 150}, {"date": "2026-07-19", "value": 150}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

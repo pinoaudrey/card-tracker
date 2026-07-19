@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 32, "player": "Alessia Russo", "team": "England", "year": "2025", "set": "Topps Now UEFA Women's EURO 2025 #029", "card_no": "029", "parallel": "Gold", "serial": "45/50", "auto": false, "relic": false, "grade": "Raw", "market_value": 15, "last_sale": null, "last_sale_date": null, "confidence": "medium", "front": "IMG_8415", "back": "IMG_8416", "notes": "'Heads Home Dramatic Equaliser' EURO final. Gold /50. No direct #029 Gold /50 comp; estimated from sibling Gold /50s + Orange /25.", "comps": ["#29 Orange Foil /25 PSA 8 \u2014 $17.50 (May 12, 2026)", "Sibling Topps Now Gold /50s \u2014 ~$27\u201335"], "point130": {"v": 34.95, "lo": 30, "hi": 150, "k": 3, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 15}];
+const SERIES=[{"date": "2026-07-18", "value": 15}, {"date": "2026-07-19", "value": 15}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 53, "player": "Georgia Stanway", "team": "FC Bayern M\u00fcnchen", "year": "2025-26", "set": "Topps Chrome UWCL", "card_no": "2", "parallel": "Refractor", "serial": "39/75", "auto": false, "relic": false, "grade": "Raw", "market_value": 7, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8457", "back": "IMG_8458", "notes": "Base refractor /75. Base #2 Refractor /75 (non-auto); no direct base /75 comp, estimated. Autos priced higher.", "comps": ["Sapphire Yellow /75 \u2014 $1.25 (Jun 7, 2026)", "Sapphire Orange /25 \u2014 $18.50\u201320.53 (Jun 2026)", "Auto Gold /50 \u2014 $10\u201360 (Jul 2026)"], "point130": {"v": 10, "lo": 0.99, "hi": 59.95, "k": 5, "tier": "close", "note": "closest: /50 (card /75)"}};
-const SERIES=[{"date": "2026-07-18", "value": 7}];
+const SERIES=[{"date": "2026-07-18", "value": 7}, {"date": "2026-07-19", "value": 7}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

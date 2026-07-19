@@ -6,7 +6,7 @@
 <a class="back" href="../index.html">&larr; Back to collection</a>
 <div class="dupwarn">&#9888; Shares player + card # with: <a href="12.html">Katie McCabe (Red Refractor 4/5)</a>. Verify these are different physical cards before trusting the count/total.</div>
 <div class="dhead"><div><h1>Katie McCabe</h1><div class="team">Arsenal</div></div>
-  <div style="text-align:right"><div class="dbig">$100</div>
+  <div style="text-align:right"><div class="dbig">$51</div>
   <div class="team">market est. &middot; low confidence</div></div></div>
 <div class="chips" style="margin-top:10px"><span class="chip grade">SGC 9</span><span class="chip">#05/15</span></div>
 <div class="dimgs"><figure><img src="../images/IMG_8374.jpg" onclick="zoom(this.src)" alt=""><figcaption>Front</figcaption></figure><figure><img src="../images/IMG_8375.jpg" onclick="zoom(this.src)" alt=""><figcaption>Back</figcaption></figure></div>
@@ -19,11 +19,11 @@
       <span class="k">Parallel</span><span>Purple Refractor</span>
       <span class="k">Serial</span><span>05/15</span>
       <span class="k">Last sale</span><span>&mdash; </span>
-      <span class="k">Card Ladder</span><span>$100 <span style="color:var(--muted)">(market est.)</span></span>
+      <span class="k">Card Ladder</span><span>$51 <span style="color:var(--muted)">(market est.)</span></span>
       <span class="k">130point</span><span>$9.99 &middot; 5 sold &middot; $1&ndash;$18 <span style="color:var(--muted)">&#126; no parallel match — broad McCabe median</span></span>
     </div></div>
     <div class="section"><h3>Recent comps</h3><ul class="comps"><li>Orange /25 (raw) — $75.00 (Aug 2, 2025)</li><li>Green /99 — $16–36 (2025)</li><li>Base refractor — $1–8</li></ul></div>
-    <div class="section"><h3>Notes</h3><div class="notes">Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate.</div></div>
+    <div class="section"><h3>Notes</h3><div class="notes">Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate. [Value reconciled to Notion comp avg (was $100; 1 Card Ladder comps $51.0–$51.0).]</div></div>
   </div>
   <div>
     <div class="section"><h3>Value history</h3><div id="cchart"></div></div>
@@ -40,8 +40,8 @@
 </div>
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
-const C={"n": 13, "player": "Katie McCabe", "team": "Arsenal", "year": "2022-23", "set": "Topps Chrome Sapphire UWCL", "card_no": "33", "parallel": "Purple Refractor", "serial": "05/15", "auto": false, "relic": false, "grade": "SGC 9", "market_value": 100, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8374", "back": "IMG_8375", "notes": "Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate.", "comps": ["Orange /25 (raw) \u2014 $75.00 (Aug 2, 2025)", "Green /99 \u2014 $16\u201336 (2025)", "Base refractor \u2014 $1\u20138"], "point130": {"v": 9.99, "lo": 1, "hi": 18, "k": 5, "tier": "broad", "note": "no parallel match \u2014 broad McCabe median"}};
-const SERIES=[{"date": "2026-07-18", "value": 100}];
+const C={"n": 13, "player": "Katie McCabe", "team": "Arsenal", "year": "2022-23", "set": "Topps Chrome Sapphire UWCL", "card_no": "33", "parallel": "Purple Refractor", "serial": "05/15", "auto": false, "relic": false, "grade": "SGC 9", "market_value": 51.0, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8374", "back": "IMG_8375", "notes": "Graded SGC 9 Mint (cert 0139770). Purple Refractor /15. No direct Purple /15 or graded comp; estimated between Orange /25 ($75) and Red /5, plus SGC 9. Rough estimate. [Value reconciled to Notion comp avg (was $100; 1 Card Ladder comps $51.0\u2013$51.0).]", "comps": ["Orange /25 (raw) \u2014 $75.00 (Aug 2, 2025)", "Green /99 \u2014 $16\u201336 (2025)", "Base refractor \u2014 $1\u20138"], "point130": {"v": 9.99, "lo": 1, "hi": 18, "k": 5, "tier": "broad", "note": "no parallel match \u2014 broad McCabe median"}};
+const SERIES=[{"date": "2026-07-18", "value": 100}, {"date": "2026-07-19", "value": 51.0}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

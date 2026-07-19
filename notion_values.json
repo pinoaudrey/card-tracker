@@ -1,0 +1,849 @@
+{
+  "1": {
+    "avg": 60.0,
+    "lo": 60.0,
+    "hi": 60.0,
+    "last_sold": 60.0,
+    "comps": 1
+  },
+  "2": {
+    "avg": null,
+    "lo": null,
+    "hi": null,
+    "last_sold": null,
+    "comps": 0
+  },
+  "3": {
+    "avg": 43.0,
+    "lo": 31.01,
+    "hi": 56.0,
+    "last_sold": 39.0,
+    "comps": 6
+  },
+  "4": {
+    "avg": 56.6,
+    "lo": 50.0,
+    "hi": 60.45,
+    "last_sold": 59.34,
+    "comps": 3
+  },
+  "5": {
+    "avg": 5.0,
+    "lo": 5.0,
+    "hi": 5.0,
+    "last_sold": 5.0,
+    "comps": 1
+  },
+  "6": {
+    "avg": 31.26,
+    "lo": 29.0,
+    "hi": 34.78,
+    "last_sold": 30.0,
+    "comps": 3
+  },
+  "7": {
+    "avg": 138.0,
+    "lo": 116.5,
+    "hi": 160.0,
+    "last_sold": 122.5,
+    "comps": 4
+  },
+  "8": {
+    "avg": 34.88,
+    "lo": 34.88,
+    "hi": 34.88,
+    "last_sold": 34.88,
+    "comps": 1
+  },
+  "9": {
+    "avg": 35.0,
+    "lo": 35.0,
+    "hi": 35.0,
+    "last_sold": 35.0,
+    "comps": 1
+  },
+  "10": {
+    "avg": 90.87,
+    "lo": 66.73,
+    "hi": 115.0,
+    "last_sold": 66.73,
+    "comps": 2
+  },
+  "11": {
+    "avg": 21.0,
+    "lo": 10.26,
+    "hi": 41.05,
+    "last_sold": 10.26,
+    "comps": 4
+  },
+  "12": {
+    "avg": 258.75,
+    "lo": 202.5,
+    "hi": 315.0,
+    "last_sold": 202.5,
+    "comps": 2
+  },
+  "13": {
+    "avg": 51.0,
+    "lo": 51.0,
+    "hi": 51.0,
+    "last_sold": 51.0,
+    "comps": 1
+  },
+  "14": {
+    "avg": 31.26,
+    "lo": 30.0,
+    "hi": 33.79,
+    "last_sold": 33.79,
+    "comps": 3
+  },
+  "15": {
+    "avg": 36.88,
+    "lo": 4.25,
+    "hi": 60.0,
+    "last_sold": 36.88,
+    "comps": 1
+  },
+  "16": {
+    "avg": 13.75,
+    "lo": 10.0,
+    "hi": 17.5,
+    "last_sold": 17.5,
+    "comps": 2
+  },
+  "17": {
+    "avg": 5.42,
+    "lo": 4.25,
+    "hi": 6.51,
+    "last_sold": 5.01,
+    "comps": 4
+  },
+  "18": {
+    "avg": 16.0,
+    "lo": 8.5,
+    "hi": 27.5,
+    "last_sold": 15.0,
+    "comps": 7
+  },
+  "19": {
+    "avg": 10.7,
+    "lo": 6.59,
+    "hi": 15.0,
+    "last_sold": 15.0,
+    "comps": 4
+  },
+  "20": {
+    "avg": 94.0,
+    "lo": 62.0,
+    "hi": 197.0,
+    "last_sold": 77.49,
+    "comps": 8
+  },
+  "21": {
+    "avg": 8.4,
+    "lo": 5.5,
+    "hi": 14.0,
+    "last_sold": 8.0,
+    "comps": 4
+  },
+  "22": {
+    "avg": 9.3,
+    "lo": 8.05,
+    "hi": 10.5,
+    "last_sold": 8.05,
+    "comps": 2
+  },
+  "23": {
+    "avg": 12.7,
+    "lo": 8.29,
+    "hi": 17.0,
+    "last_sold": 14.5,
+    "comps": 6
+  },
+  "24": {
+    "avg": 16.3,
+    "lo": 13.0,
+    "hi": 18.0,
+    "last_sold": 18.0,
+    "comps": 3
+  },
+  "25": {
+    "avg": 6.0,
+    "lo": 2.45,
+    "hi": 17.54,
+    "last_sold": 8.0,
+    "comps": 4
+  },
+  "26": {
+    "avg": 6.6,
+    "lo": 1.25,
+    "hi": 10.0,
+    "last_sold": 8.27,
+    "comps": 5
+  },
+  "27": {
+    "avg": 16.0,
+    "lo": 9.5,
+    "hi": 20.0,
+    "last_sold": 9.5,
+    "comps": 5
+  },
+  "28": {
+    "avg": 14.0,
+    "lo": 12.0,
+    "hi": 16.08,
+    "last_sold": 12.0,
+    "comps": 2
+  },
+  "29": {
+    "avg": 35.0,
+    "lo": 20.0,
+    "hi": 62.93,
+    "last_sold": null,
+    "comps": 0
+  },
+  "30": {
+    "avg": 60.0,
+    "lo": 59.0,
+    "hi": 260.0,
+    "last_sold": 59.0,
+    "comps": 1
+  },
+  "31": {
+    "avg": 52.5,
+    "lo": 40.0,
+    "hi": 67.5,
+    "last_sold": 67.5,
+    "comps": 3
+  },
+  "32": {
+    "avg": 20.7,
+    "lo": 15.0,
+    "hi": 31.56,
+    "last_sold": 31.56,
+    "comps": 3
+  },
+  "33": {
+    "avg": 64.8,
+    "lo": 58.28,
+    "hi": 75.0,
+    "last_sold": 61.03,
+    "comps": 3
+  },
+  "34": {
+    "avg": 161.0,
+    "lo": 122.06,
+    "hi": 200.0,
+    "last_sold": 122.06,
+    "comps": 2
+  },
+  "35": {
+    "avg": 39.99,
+    "lo": 39.99,
+    "hi": 39.99,
+    "last_sold": 39.99,
+    "comps": 1
+  },
+  "36": {
+    "avg": 39.6,
+    "lo": 27.5,
+    "hi": 51.73,
+    "last_sold": 51.73,
+    "comps": 2
+  },
+  "37": {
+    "avg": 28.6,
+    "lo": 18.5,
+    "hi": 47.44,
+    "last_sold": 47.44,
+    "comps": 3
+  },
+  "38": {
+    "avg": 28.6,
+    "lo": 18.5,
+    "hi": 47.44,
+    "last_sold": 47.44,
+    "comps": 3
+  },
+  "39": {
+    "avg": 40.0,
+    "lo": 40.0,
+    "hi": 40.0,
+    "last_sold": 40.0,
+    "comps": 1
+  },
+  "40": {
+    "avg": 15.0,
+    "lo": 5.0,
+    "hi": 32.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "41": {
+    "avg": 12.0,
+    "lo": 9.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "42": {
+    "avg": 6.0,
+    "lo": 1.34,
+    "hi": 17.5,
+    "last_sold": null,
+    "comps": 0
+  },
+  "43": {
+    "avg": 13.0,
+    "lo": 8.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "44": {
+    "avg": 4.2,
+    "lo": 2.26,
+    "hi": 6.81,
+    "last_sold": 2.26,
+    "comps": 3
+  },
+  "45": {
+    "avg": 19.5,
+    "lo": 19.0,
+    "hi": 20.0,
+    "last_sold": 19.0,
+    "comps": 2
+  },
+  "46": {
+    "avg": 12.0,
+    "lo": 12.0,
+    "hi": 20.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "47": {
+    "avg": 28.0,
+    "lo": 16.88,
+    "hi": 29.99,
+    "last_sold": null,
+    "comps": 0
+  },
+  "48": {
+    "avg": 10.8,
+    "lo": 5.5,
+    "hi": 30.0,
+    "last_sold": 15.5,
+    "comps": 5
+  },
+  "49": {
+    "avg": 4.6,
+    "lo": 1.0,
+    "hi": 10.5,
+    "last_sold": 1.0,
+    "comps": 4
+  },
+  "50": {
+    "avg": 3.0,
+    "lo": 0.99,
+    "hi": 5.0,
+    "last_sold": 0.99,
+    "comps": 4
+  },
+  "51": {
+    "avg": 7.8,
+    "lo": 3.25,
+    "hi": 12.0,
+    "last_sold": 3.25,
+    "comps": 7
+  },
+  "52": {
+    "avg": 7.0,
+    "lo": 5.5,
+    "hi": 9.0,
+    "last_sold": 7.0,
+    "comps": 4
+  },
+  "53": {
+    "avg": 3.0,
+    "lo": 2.0,
+    "hi": 5.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "54": {
+    "avg": 4.99,
+    "lo": 4.99,
+    "hi": 4.99,
+    "last_sold": 4.99,
+    "comps": 1
+  },
+  "55": {
+    "avg": 10.0,
+    "lo": 5.0,
+    "hi": 30.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "56": {
+    "avg": 10.0,
+    "lo": 10.0,
+    "hi": 10.0,
+    "last_sold": 10.0,
+    "comps": 1
+  },
+  "57": {
+    "avg": 8.0,
+    "lo": 2.0,
+    "hi": 17.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "58": {
+    "avg": 8.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "59": {
+    "avg": 8.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "60": {
+    "avg": 9.0,
+    "lo": 4.0,
+    "hi": 14.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "61": {
+    "avg": 8.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "62": {
+    "avg": 9.0,
+    "lo": 4.0,
+    "hi": 14.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "63": {
+    "avg": 7.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "64": {
+    "avg": 6.0,
+    "lo": 3.0,
+    "hi": 10.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "65": {
+    "avg": 8.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "66": {
+    "avg": 6.0,
+    "lo": 3.0,
+    "hi": 10.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "67": {
+    "avg": 7.0,
+    "lo": 4.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "68": {
+    "avg": 6.0,
+    "lo": 3.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "69": {
+    "avg": 1.5,
+    "lo": 1.0,
+    "hi": 1.5,
+    "last_sold": 1.5,
+    "comps": 1
+  },
+  "70": {
+    "avg": 6.0,
+    "lo": 3.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "71": {
+    "avg": 6.0,
+    "lo": 3.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "72": {
+    "avg": 6.0,
+    "lo": 3.25,
+    "hi": 12.0,
+    "last_sold": 7.9,
+    "comps": 3
+  },
+  "73": {
+    "avg": 20.0,
+    "lo": 12.0,
+    "hi": 30.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "74": {
+    "avg": 10.0,
+    "lo": 6.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "75": {
+    "avg": 18.0,
+    "lo": 11.0,
+    "hi": 25.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "76": {
+    "avg": 4.0,
+    "lo": 2.0,
+    "hi": 6.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "77": {
+    "avg": 0.99,
+    "lo": 0.99,
+    "hi": 0.99,
+    "last_sold": 0.99,
+    "comps": 1
+  },
+  "78": {
+    "avg": 3.0,
+    "lo": 2.0,
+    "hi": 5.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "79": {
+    "avg": 10.0,
+    "lo": 6.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "80": {
+    "avg": 8.0,
+    "lo": 5.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "81": {
+    "avg": 8.0,
+    "lo": 5.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "82": {
+    "avg": 4.0,
+    "lo": 3.0,
+    "hi": 6.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "83": {
+    "avg": 1.5,
+    "lo": 1.0,
+    "hi": 3.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "84": {
+    "avg": 2.0,
+    "lo": 1.0,
+    "hi": 4.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "85": {
+    "avg": 1.5,
+    "lo": 1.0,
+    "hi": 3.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "86": {
+    "avg": 5.0,
+    "lo": 3.0,
+    "hi": 8.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "87": {
+    "avg": 4.0,
+    "lo": 2.0,
+    "hi": 6.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "88": {
+    "avg": 4.0,
+    "lo": 2.68,
+    "hi": 6.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "89": {
+    "avg": 6.0,
+    "lo": 4.0,
+    "hi": 10.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "90": {
+    "avg": 4.0,
+    "lo": 3.0,
+    "hi": 6.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "91": {
+    "avg": 90.0,
+    "lo": 50.0,
+    "hi": 150.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "92": {
+    "avg": 18.0,
+    "lo": 10.0,
+    "hi": 30.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "93": {
+    "avg": 28.0,
+    "lo": 18.0,
+    "hi": 45.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "94": {
+    "avg": 45.0,
+    "lo": 30.0,
+    "hi": 70.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "95": {
+    "avg": 120.0,
+    "lo": 80.0,
+    "hi": 160.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "96": {
+    "avg": 110.0,
+    "lo": 90.0,
+    "hi": 130.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "97": {
+    "avg": 90.0,
+    "lo": 60.0,
+    "hi": 150.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "98": {
+    "avg": 18.0,
+    "lo": 12.0,
+    "hi": 25.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "99": {
+    "avg": 112.5,
+    "lo": 112.5,
+    "hi": 112.5,
+    "last_sold": 112.5,
+    "comps": 1
+  },
+  "100": {
+    "avg": 15.0,
+    "lo": 9.0,
+    "hi": 28.0,
+    "last_sold": 9.0,
+    "comps": 6
+  },
+  "101": {
+    "avg": 28.0,
+    "lo": 20.0,
+    "hi": 40.0,
+    "last_sold": 0.99,
+    "comps": 0
+  },
+  "102": {
+    "avg": 9.0,
+    "lo": 2.25,
+    "hi": 15.0,
+    "last_sold": 10.0,
+    "comps": 6
+  },
+  "103": {
+    "avg": 9.0,
+    "lo": 3.25,
+    "hi": 20.0,
+    "last_sold": 3.25,
+    "comps": 5
+  },
+  "104": {
+    "avg": 22.0,
+    "lo": 12.0,
+    "hi": 35.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "105": {
+    "avg": 35.0,
+    "lo": 35.0,
+    "hi": 35.0,
+    "last_sold": 35.0,
+    "comps": 1
+  },
+  "106": {
+    "avg": 25.0,
+    "lo": 15.0,
+    "hi": 40.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "107": {
+    "avg": 18.0,
+    "lo": 12.0,
+    "hi": 30.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "108": {
+    "avg": 12.0,
+    "lo": 8.27,
+    "hi": 18.0,
+    "last_sold": 9.91,
+    "comps": 3
+  },
+  "109": {
+    "avg": 35.0,
+    "lo": 35.0,
+    "hi": 35.0,
+    "last_sold": 35.0,
+    "comps": 1
+  },
+  "110": {
+    "avg": 45.0,
+    "lo": 40.0,
+    "hi": 50.0,
+    "last_sold": 39.99,
+    "comps": 2
+  },
+  "111": {
+    "avg": 30.0,
+    "lo": 22.0,
+    "hi": 65.0,
+    "last_sold": 22.0,
+    "comps": 2
+  },
+  "112": {
+    "avg": 12.0,
+    "lo": 7.0,
+    "hi": 20.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "113": {
+    "avg": 15.0,
+    "lo": 8.0,
+    "hi": 25.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "114": {
+    "avg": 8.0,
+    "lo": 5.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "115": {
+    "avg": 8.0,
+    "lo": 5.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "116": {
+    "avg": 8.0,
+    "lo": 5.0,
+    "hi": 12.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "117": {
+    "avg": 10.0,
+    "lo": 6.0,
+    "hi": 15.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "118": {
+    "avg": 5.0,
+    "lo": 2.5,
+    "hi": 11.17,
+    "last_sold": 6.95,
+    "comps": 4
+  },
+  "119": {
+    "avg": 5.0,
+    "lo": 3.0,
+    "hi": 8.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "120": {
+    "avg": 5.0,
+    "lo": 3.0,
+    "hi": 8.0,
+    "last_sold": null,
+    "comps": 0
+  },
+  "121": {
+    "avg": 5.0,
+    "lo": 3.0,
+    "hi": 8.0,
+    "last_sold": null,
+    "comps": 0
+  }
+}

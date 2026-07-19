@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 103, "player": "Emily Fox", "team": "USWNT", "year": "2024-25", "set": "Panini Select FIFA \u2014 FIFA Signatures", "card_no": "S-EF", "parallel": "Blue", "serial": "", "auto": true, "relic": false, "grade": "Raw", "market_value": 7, "last_sale": 6.66, "last_sale_date": "2026-07-16", "confidence": "medium", "front": "IMG_8564", "back": "IMG_8565", "notes": "Blue parallel auto.", "comps": ["FIFA Signatures #S-EF \u2014 $6.66 (Jul 16, 2026)"], "point130": {"v": 11.25, "lo": 3.91, "hi": 19.86, "k": 8, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 7}];
+const SERIES=[{"date": "2026-07-18", "value": 7}, {"date": "2026-07-19", "value": 7}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

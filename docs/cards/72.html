@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 72, "player": "Lauren James", "team": "Chelsea FC", "year": "2024-25", "set": "Topps Chrome UWCL", "card_no": "10", "parallel": "Purple Wave /75", "serial": "", "auto": false, "relic": false, "grade": "Raw", "market_value": 7, "last_sale": null, "last_sale_date": null, "confidence": "low", "front": "IMG_8496", "back": "IMG_8497", "notes": "Base #10 /75. #10 Purple Wave /75; base parallels $2\u20135.49, /75 estimated ~$7.", "comps": ["#10 Blue Refractor /150 \u2014 $5.49 (Jul 10, 2026)", "Aqua /199 \u2014 $1.98 (Jul 17, 2026)", "Pink Auto /250 \u2014 $7.52 (Jul 17, 2026)"], "point130": {"v": 1.25, "lo": 1.25, "hi": 1.25, "k": 1, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 7}];
+const SERIES=[{"date": "2026-07-18", "value": 7}, {"date": "2026-07-19", "value": 7}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

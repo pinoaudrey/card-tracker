@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 41, "player": "Giulia Gwinn", "team": "FC Bayern M\u00fcnchen", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football", "card_no": "QF-5", "parallel": "Refractor", "serial": "23/25", "auto": false, "relic": false, "grade": "Raw", "market_value": 10, "last_sale": 10.4, "last_sale_date": "2026-06-28", "confidence": "medium", "front": "IMG_8433", "back": "IMG_8434", "notes": "Queens of Football insert, /25.", "comps": ["Orange /25 \u2014 $10.40 (Jun 28, 2026)", "Rose Gold /50 \u2014 $10.00 (Jul 11, 2026)", "/75 \u2014 $5.49 (Jul 7, 2026)"], "point130": {"v": 10.5, "lo": 0.99, "hi": 127.4, "k": 35, "tier": "broad", "note": "no parallel match \u2014 broad Gwinn median"}};
-const SERIES=[{"date": "2026-07-18", "value": 10}];
+const SERIES=[{"date": "2026-07-18", "value": 10}, {"date": "2026-07-19", "value": 10}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}

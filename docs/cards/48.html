@@ -41,7 +41,7 @@
 <div class="lightbox" id="lb"><img id="lbimg" src=""></div>
 <script>
 const C={"n": 48, "player": "Melvine Malard", "team": "Manchester United", "year": "2025-26", "set": "Topps Chrome UWCL \u2014 Queens of Football Autographs", "card_no": "QFA-MM", "parallel": "", "serial": "074/299", "auto": true, "relic": false, "grade": "Raw", "market_value": 8, "last_sale": 15.5, "last_sale_date": "2026-07-15", "confidence": "high", "front": "IMG_8447", "back": "IMG_8448", "notes": "On-card auto /299.", "comps": ["QoF Auto /299 \u2014 $15.50 (Jul 15, 2026)", "QoF Auto /299 \u2014 $8.01 (Jul 7, 2026)", "QoF Auto /299 \u2014 $5.50 (Jul 6, 2026)"], "point130": {"v": 8.01, "lo": 2.25, "hi": 30, "k": 7, "tier": "exact"}};
-const SERIES=[{"date": "2026-07-18", "value": 8}];
+const SERIES=[{"date": "2026-07-18", "value": 8}, {"date": "2026-07-19", "value": 8}];
 function unreal(s){return(s.paid!=null&&C.market_value!=null)?C.market_value-s.paid:null;}
 function real(s){return(s.sold&&s.paid!=null&&s.soldFor!=null)?s.soldFor-s.paid:null;}
 function plHTML(s){let v,lab='';if(s.sold){v=real(s);lab=' realized';}else{v=unreal(s);lab=' vs market';}
